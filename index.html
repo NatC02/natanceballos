@@ -17,39 +17,41 @@
         <meta name="description" content="Welcome to my journal, where I write about life, societal trends, travels, review books and certifications. Here, you can keep up with what I'm thinking about, working on, follow me for an interesting journey in my online journey.">
         <meta name="twitter:description" content="Welcome to my journal, where I write about life, societal trends, travels, review books and certifications. Here, you can keep up with what I'm thinking about, working on, follow me for an interesting journey in my online journey.">
         <meta property="og:description" content="Welcome to my journal, where I write about life, societal trends, travels, review books and certifications. Here, you can keep up with what I'm thinking about, working on, follow me for an interesting journey in my online journey.">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QKRQP1LDZ"></script>
-        <script>
+        
+        <script defer async src="https://www.googletagmanager.com/gtag/js?id=G-0QKRQP1LDZ"></script>
+        <script defer>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
         
           gtag('config', 'G-0QKRQP1LDZ');
         </script>
+        
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i" rel="stylesheet" />
         <link type="text/css" rel="stylesheet" href="./css/reset.css">
-        <link type="text/css" rel="stylesheet" href="./css/index.css">
+        <link type="text/css" rel="stylesheet" href="./css/home/index.css">
         <link rel="icon" href="/images/favicon.svg">
     </head>
     <body class="stack">
       <header class="box-h">
           <picture class="frame-h box-h">
-            <!-- <source
+            <source
               sizes="(max-width: 2161px) 100vw"
-              srcset="hero-1920w.avif 1920w, hero-1280w.avif 1280w, hero-640w.avif 640w, hero-320w.avif 320w"
+              srcset="./img/hero/hero-1920w.avif 1920w, ./img/hero/hero-1280w.avif 1280w, ./img/hero/hero-640w.avif 640w, ./img/hero/hero-320w.avif 320w"
               type="image/avif"
             />
             <source
               sizes="(max-width: 2161px) 100vw"
-              srcset=" hero-1920w.webp 1920w, hero-1280w.webp 1280w, hero-640w.webp 640w, hero-320w.webp 320w"
+              srcset=" ./img/hero/hero-1920w.webp 1920w, ./img/hero/hero-1280w.webp 1280w, ./img/hero/hero-640w.webp 640w, ./img/hero/hero-320w.webp 320w"
               type="image/webp"
             />
             <source
               sizes="(max-width: 2161px) 100vw"
-              srcset="hero-1920w.jpg 1920w, hero-1280w.jpg 1280w, hero-640w.jpg 640w, hero-320w.jpg 320w"
+              srcset="./img/hero/hero-1920w.jpg 1920w, ./img/hero/hero-1280w.jpg 1280w, ./img/hero/hero-640w.jpg 640w, ./img/hero/hero-320w.jpg 320w"
               type="image/jpeg"
-            /> -->
-              <img src="fallback-high.jpeg" alt="Young man looking to portraits on the wall in a rocking chair." width="450" height="350">
+            />
+              <img src="fallback-low.png" alt="Young man in front of window looking to portraits on the wall in a rocking chair." width="450" height="350">
           </picture>
       </header>
 
@@ -62,27 +64,27 @@
               <nav role="navigation" class="box-nav">
                 <ul role='list' class="cluster">
                   <li role="listitem">
-                    <a href="/index.html" role="link">
-                      <button class="link" aria-label="Home">Home</button>  
+                    <a href="/index.html" aria-current="page" role="link" tabindex="-1">
+                      <button class="link" aria-label="Navigate to Home">Home</button>  
                     </a>
                   </li>
                   <li role="listitem">
-                    <a href="./entries.html" role="link">
-                      <button class="link" aria-label="Entries">Entries</button>
+                    <a href="./entries.html" role="link" tabindex="-1">
+                      <button class="link" aria-label="navigate to Entries Page">Entries</button>
                     </a>
                   </li>
                   <li role="listitem">
-                    <a href="./photo-album.html" role="link">
-                      <button class="link" aria-label="Photo Album">Photo Album</button>
+                    <a href="./photo-album.html" role="link" tabindex="-1">
+                      <button class="link" aria-label="Navigate to Photo Album Page">Photo Album</button>
                     </a>
                   </li>
                 </ul>
               </nav>
   
               <h1 class="intro-title" role="heading" aria-level="1">Reflections & Reviews - A Monthly Journal of Growth</h1>
-              <p class="intro-par">This is my corner of the world wide web, where I write about life, societal trends, and travels. I also write reviews for books and certifications. Here, you can keep up with what I'm thinking about, learning, and working on.</p>
+              <p class="intro-par" role="paragraph">This is my corner of the world wide web, where I write about life, societal trends, and travels. I also write reviews for books and certifications. Here, you can keep up with what I'm thinking about, learning, and working on.</p>
               <a href="journal" role="link">
-                  <button class="intro-cta" aria-label="Open Journal">Open</button>
+                  <button class="intro-cta" aria-label="Navigate to Journal Page" tabindex="-1">Open</button>
               </a>
 
               <div class="icon-box">
@@ -99,34 +101,24 @@
             <article class="box-about">
               <h2 class="about-title" role="heading" aria-level="2">More about me</h2>
               <h3 class="about-sub" role="heading" aria-level="3">Fostering our community</h3>
-              <p class="about-par">I'm also a Frontend Developer and founder
-                <a href="mailto: support@celeresco.com">@Celeresco</a>. 
+              <p class="about-par" role="paragraph">I'm also a Frontend Developer and founder
+                <a href="mailto: support@celeresco.com"> @Celeresco</a>. 
                 It's my mission to help people from all walks of life get a better understanding of Frontend development through tutorials and tech posts. I aim to cultivate an engaged community that will help each other on their journey to learn and grow.</p>
-              <a href="https://celeresco.com" role="link">
-                <button class="about-cta" aria-label="Join Celeresco"><i>Join</i></button>
+              <a href="https://celeresco.com" role="link" aria-label="Navigate to Celeresco">
+                <button class="about-cta" tabindex="-1"><i>Join</i></button>
               </a>
   
               <footer>     
                 <nav class="box-nav">
                   <ul role='list' class="cluster">
-                    <!-- <li role="listitem">
-                      <a href="https://linkedin.com/in/natanceballos" target="_blank">
-                        <button class="footer-link">LinkedIn</button>
+                    <li role="listitem">
+                      <a href="./portfolio.html" role="link" tabindex="-1">
+                        <button class="footer-link" aria-label="Navigate to Portfolio page">Portfolio</button>
                       </a>
                     </li>
                     <li role="listitem">
-                      <a href="https://GitHub.com/NatC02" target="_blank">
-                        <button class="footer-link">GitHub</button>
-                      </a>
-                    </li> -->
-                    <li role="listitem">
-                      <a href="./portfolio.html" role="link">
-                        <button class="footer-link" aria-label="Portfolio">Portfolio</button>
-                      </a>
-                    </li>
-                    <li role="listitem">
-                      <a href="./photo-album.html" role="link">
-                        <button class="footer-link" aria-label="Contact">Contact</button>
+                      <a href="./photo-album.html" role="link" tabindex="-1">
+                        <button class="footer-link" aria-label="Navigate to Contact page">Contact</button>
                       </a>
                     </li>
                   </ul>
