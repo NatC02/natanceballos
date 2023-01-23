@@ -13,21 +13,103 @@
 */
 
 :root {
-    /* colors */
-    /* --color-TEXT: '#787b6a';  */
-    --color-GREEN: '#81846f';
-    --color-TAN: "#faf1e2";
-    --color-HIGHLIGHT-ON-TAN: '#b49d73';
-    --color-HIGHLIGHT-ON-GREEN: '#eed8b3';
-    --color-PARAGRAPH-ON-TAN: '#b5af9c';
-    --color-PARAGRAPH-ON-GREEN: '#faf1e2';
-    --color-ITALICS: '#d6cfbc';
-    --color-ACTIVE-LINK: "#2c701f";
+    /* Ok so this will look REALLY confusing, but this is all for the left-side (start-side) of the page, hopefully this don't look fuggly in style */
+    
+    /* LIGHT THEME */
+    /* Page Start Side Light theme variables */
+    /* background */
+    --color-start-light-background: '#FAF1E2';
+    /* text */
+    --color-start-light-text: '#81846F';
+    --color-start-light-paragraph: "#81846F";
+    /* links, both are the same, change later */
+    --color-start-light-link-text: "#B49D73";
+    --color-start-light-link-text-background: "#B49D73";
 
+    --color-start-light-project: "#fff";
+    
+    --color-start-light-active-link: "#2C701F";
+    /* this is black for now, change it later */
+    --color-start-light-active-link-background: "#000";
+
+    
+    /* Page End Side Light theme variables */
+    /* background */
+    --color-end-light-background: '#7D8491';
+    /* text */
+    --color-end-light-text: '#F7EDE2';
+    --color-end-light-paragraph: "#F7EDE2";
+    /* links, both are the same, change later */
+    --color-end-light-link-text: "#C97C5D";
+    --color-end-light-link-text-background: "#C97C5D";
+    
+    --color-end-light-active-link: "#493548";
+    /* this is black for now, change it later */
+    --color-end-light-active-link-background: "#000";
+
+
+
+
+
+    /* DARK THEME */
+    /* Page Start Side Dark theme variables */
+
+    /* ordering of colors are as follows fron https://colorhunt.co/palette/2c36393f4e4fa27b5cdcd7c9*/
+    /* 1st column: background, 2nd: links  3rd: text 4th: active*/
+
+    /* background */
+    --color-start-dark-background: '#2C3639';
+    /* text */
+    --color-start-dark-text: '#A27B5C';
+    --color-start-dark-paragraph: "#A27B5C";
+    /* links, both are the same, change later */
+    --color-start-dark-link-text: "#3F4E4F";
+    --color-start-dark-link-text-background: "#3F4E4F";
+    
+    --color-start-dark-active-link: "#DCD7C9";
+    /* this is black for now, change it later */
+    --color-start-dark-active-link-background: "#000";
+
+    /* https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097 */
+    /* Page End Side dark theme variables */
+    /* background */
+    --color-end-dark-background: '#2D2424';
+    /* text */
+    --color-end-dark-text: '#B85C38';
+    --color-end-dark-paragraph: "#B85C38";
+    /* links, both are the same, change later */
+    --color-end-dark-link-text: "#5C3D2E";
+    --color-end-dark-link-text-background: "#5C3D2E";
+    
+    --color-end-dark-active-link: "#E0C097";
+    /* this is black for now, change it later */
+    --color-end-dark-active-link-background: "#000";
+
+       
+
+
+
+
+
+
+    /* Page End Side Light theme variables */
+
+
+/* 
     --color-TESTIMONIAL-TOP: "#648767";
     --color-TESTIMONIAL-BOTTOM: "#648767";
 
     --color-PROJECTS-BG: "#f9faed";
+
+    --container-dark-text: #FDF8F7;
+    --container-dark-background: #1C0C07;
+    --para-dark-text: #CCCCCC;
+    --anchor-dark-text: #512115;
+    --anchor-dark-bg: #F5DDD6;
+
+    --color-DARK-MODE-TXT: "#153131";
+    --color-DARK-MODE-BG: "#153131";
+    --color-DARK-MODE-HIGHLIGHT: "#153131"; */
 
     --space-xs:clamp(0.75rem,0.69rem + 0.29vw,0.9375rem);
     --space-s:clamp(1rem,0.92rem + 0.39vw,1.25rem);
@@ -53,7 +135,7 @@
     --size-step-5:clamp(2.5rem,1.08rem + 7.09vw,7.0625rem);
     --size-step-6:clamp(3rem,0.84rem + 10.78vw,9.9375rem);
     
-    --font-base: "Atkinson Hyperlegible",Inter,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    --font-base: 'Abhaya Libre',Inter,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
     --font-serif:Georgia,sans-serif;
     
     /* For this page the --measure is disabled because it overrides the layout for the grid */
@@ -89,8 +171,28 @@ footer {
 
 a {
     text-decoration: none;
-    color: #b49d73;
+    color: var(--color-start-light-link-text);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*** 2.0 - Body ***/
 
@@ -98,29 +200,110 @@ body {
     font-family:var(--font-base);
     font-size:var(--size-step-1);
     letter-spacing:var(--tracking);
+
+    background-color: var(--color-start-light-background);
 }
+
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+}
+  
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  border-radius: 100%;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
 
 .page-sidebar {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-xs, var(--size-step-1));
 
-    background-color: #faf1e2;
+    background-color: var(--color-start-light-background);
     margin-inline-start: var(--size-step-2);
-    margin-block-start: var(--size-step-2);
+    /* margin-block-start: var(--size-step-2); */
 }
 
 .page-sidebar > :first-child {
-    flex-basis: 70rem;
+    flex-basis: 75rem;
     flex-grow: 1;
 }
-
 
 .page-sidebar > :last-child {
     flex-basis: 0;
     flex-grow: 999;
-    min-inline-size: 25%;   
+    min-inline-size: 20%;
+
+    background-color: var(--color-end-light-background);
 }
+
+.page-start-side {
+    margin-inline-start: var(--size-step-4);
+}
+
+.page-end-side {
+    /* margin-inline-start: var(--size-step-4); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*** 3.0 - Headers ***/
 
@@ -130,18 +313,18 @@ h1,h2,h3{
 }
 
 h1 {
-    font-size:var(--size-step-4)
+    font-size:var(--size-step-4);
 }
 
 h2 {
-    font-size:var(--size-step-3)
+    font-size:var(--size-step-3);
 }
 
 h3 {
-    font-size:var(--size-step-2)
+    font-size:var(--size-step-2);
 }
 
-span {
+p, span {
   font-size: var(--size-step-0);
 }
 
@@ -151,6 +334,12 @@ blockquote:not([className]),li,p{
 
 h1,h2,h3{
     max-width:22ch;
+}
+
+h4, h5, h6 {
+    font-size: var(--size-step-1);
+    letter-spacing: var(--tracking);
+    line-height: 1;
 }
 
 .stack {
@@ -167,15 +356,25 @@ h1,h2,h3{
     margin-block-start: var(--space-xs-s, 1.5rem);
 } */
 
-.start-side {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
 
-    margin-inline-start: var(--size-step-4);
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*** 4.0 - Main Nav ***/
 
@@ -185,6 +384,9 @@ h1,h2,h3{
     gap: var(--size-step-2, 1rem);
     justify-content: start;
     align-items: center;
+
+    margin-block-start: var(--size-step-2);
+
 }
   
 #image-container {
@@ -305,7 +507,7 @@ nav ul li a:not(.link-active) {
 }
 
 .link-active { 
-    color: #2c701f;
+    color: var(--color-start-light-active-link);
 
     pointer-events: none;
     /* cursor: default; */
@@ -332,6 +534,26 @@ nav ul li a:not(.link-active) {
   transform: translate(calc(100% - var(--margin) * 2), -50%);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*** 4.0 - Intro Section ***/
 
 .box-intro {
@@ -340,41 +562,115 @@ nav ul li a:not(.link-active) {
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
+
     
-    margin-block-start: var(--size-step-3);
-    margin-inline-end: var(--size-step-1);
+    margin-block-start: var(--size-step-4);
+    margin-inline-start: var(--size-step-2);
+    margin-inline-end: var(--size-step-2);
 }
 
 .intro-title {
-    margin-block-start: var(--size-step-2);
+    margin-block-start: var(--size-step-4);
+    letter-spacing: var(--tracking);
+    color: var(--color-start-light-text);
+}
+
+.highlight-start {
+    --s: 0.1em;  
+    --c: #b49d73;
+    
+    color: transparent;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+}
+ 
+.highlight-start:hover {--_p: 100%}
+  
+.highlight-start {
+    cursor: pointer;
 }
 
 .intro-sub-title {
     margin-block-start: var(--size-step-2);
+    color: var(--color-start-light-text);
+}
+
+.highlight-mid {
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #DE6C83; /* the color */
+    
+    color: transparent;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+}
+ 
+.highlight-mid:hover {--_p: 100%}
+  
+.highlight-mid {
+    cursor: pointer;
 }
 
 .intro-par {
-    margin-block-start: var(--size-step-4);
+    margin-block-start: var(--size-step-2);
+    /* margin-block-end: var(--size-step-2); */
+    line-height: 1.618;
+    letter-spacing: var(--tracking-s);
+    color: var(--color-start-light-paragraph);
+    max-inline-size: 75ch;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*** 5.0 - Testimonials Section ***/
 
-.testimonial-box {
+.card-box {
 	margin-inline-start: var(--size-step-2);
-	/* margin-right: auto; */
-	max-width: var(--wrapper-max-width, 85rem);
+	/* max-width: var(--wrapper-max-width, 85rem); */
 	padding-inline-start: var(--gutter);
 	padding-inline-end: var(--gutter);
 	position: relative;
 
+    margin-block-start: var(--size-step-6);
 }
 
-.testimonials-title {
-    margin-block-start: var(--size-step-4);
+.card-title {
+    margin-block-start: var(--size-step-2);
     margin-block-end: var(--size-step-2);
+    color: var(--color-start-light-text);
+    
+
+    display: inline;
 }
 
-.grid {
+.card-grid {
 	display: grid
 }
 
@@ -382,43 +678,44 @@ nav ul li a:not(.link-active) {
 	margin-top: clamp(2rem,1.46rem + 2.72vw,3.75rem)
 }
 
-.grid {
+.card-grid {
 	display: grid;
 	gap: var(--gutter,var(--space-s-l));
 	grid-template-columns: repeat(var(--grid-placement,auto-fill),minmax(var(--grid-min-item-size,16rem),1fr))
 }
 
-.grid[data-rows=masonry] {
+.card-grid[data-rows=masonry] {
 	align-items: start;
 	grid-template-rows: masonry
 }
 
-.grid[data-layout="50-50"] {
+.card-grid[data-layout="50-50"] {
 	--grid-placement: auto-fit;
 	--grid-min-item-size: clamp(16rem,50vw,26rem);
 }
 
-.testimonial-card {
-    background-color: #ffff;
+.card-info {
+    background-color: var(--color-start-light-active-link);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23f9faed' fill-opacity='0.68' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0tH2.07z'%3E%3C/path%3E%3C/svg%3E");
     box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
 
 	border-radius: var(--border-radius);
-	padding: var(--space-m-l)        
+	padding: var(--space-m);
 }
 
-.testimonial-card {
-    max-inline-size: 30ch;
+.card-info {
+    max-inline-size: 40ch;
+    color: var(--color-start-light-text);
 
 }
 
-.testimonial-card > blockquote {
+.card-info > blockquote {
     font-size: .8em;
-    letter-spacing: .03em;
+    letter-spacing: var(--tracking-s);
     font-style: italic;
 }
 
-.testimonial-sidebar {
+.card-info-sidebar {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gutter, var(--size-step-1));    
@@ -435,21 +732,21 @@ nav ul li a:not(.link-active) {
 }
 
 /* progressive enhancement of highlighting the selected card */
-.testimonial-sidebar ::selection {
+.card-info-sidebar ::selection {
 	/* background: #2c701f; */
 	/* color: #000; */
 }
 
-.testimonial-sidebar > :first-child {
+.card-info-sidebar > :first-child {
     /* ↓ The width when the sidebar _is_ a sidebar */
     flex-basis: 4rem;
     flex-grow: 1;
 
-    /* this seems to do it, does not allow the image inside the testimonial-sidebar class to stretch vertically */
+    /* this seems to do it, does not allow the image inside the card-info-sidebar class to stretch vertically */
     block-size: 100%;
 }
 
-.testimonial-sidebar > :last-child {
+.card-info-sidebar > :last-child {
     flex-basis: 0;
     flex-grow: 999;
     min-inline-size: 50%;
@@ -488,19 +785,209 @@ nav ul li a:not(.link-active) {
 .testimonial-profile-details > cite {
     display: inline;
     font-size: .7em;
-    letter-spacing: .03em;
+    letter-spacing: var(--tracking-s)
 }
 
 .testimonial-profile-details > span {
     display: inline;
     font-size: .5em;
-    letter-spacing:.05em;
+    letter-spacing: var(--tracking-s)
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** 6.0 - Projects Section ***/
+
+.project-profile {
+    aspect-ratio: (16 / 9);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-profile > img {
+    border-radius: var(--size-step-0);
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+.project-profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .project-profile-details > * + * { */
+    /* margin-block-start: var(--space-2xl); */
+/* } */
+
+
+.project-profile-details > cite {
+    display: inline;
+    font-size: .7em;
+    letter-spacing: var(--tracking-s);
+}
+
+.project-profile-details > span {
+    display: inline;
+    font-size: .5em;
+    letter-spacing: var(--tracking-s);
+}
+
+.buttons-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    /* ↓ The default value is the first point on the modular scale */
+    gap: var(--gutter, var(--s1));
+}
+    
+.buttons-sidebar > :first-child {
+    /* ↓ The width when the sidebar _is_ a sidebar */
+    flex-basis: 20rem;
+    flex-grow: 1;
+}
+    
+.buttons-sidebar > :last-child {
+    /* ↓ Grow from nothing */
+    flex-basis: 0;
+    flex-grow: 999;
+    /* ↓ Wrap when the elements are of equal width */
+    min-inline-size: 50%;
+}
+
+.slide-button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: var(--size-step-0) var(--size-step-0);
+    margin: var(--size-step-0);
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: inherit;
+    border-radius: 500px;
+    overflow: hidden;
+    background: var(--color-start-light-active-link);
+    color: inherit;
+   }
+   
+.slide-button span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+}
+
+.slide-button:hover span {
+ color: black;
+}
+
+.slide-button::before,
+.slide-button::after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+   
+.slide-button::before {
+ content: "";
+ background: #000;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.slide-button:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** 7.0 - About Me Section ***/
+
+.center {
+    /* ↓ Remove padding from the width calculation */
+    box-sizing: content-box;
+    /* ↓ The maximum width is the maximum measure */
+    max-inline-size: 60ch;
+    /* ↓ Only affect horizontal margins */
+    margin-inline: auto;
+    /* ↓ Apply the minimum horizontal space */
+    padding-inline-start: var(--size-step-0);
+    padding-inline-end: var(--size-step-0);
+    text-align: center;
+}
+
+.about-box {
+	/* margin-inline-start: var(--size-step-2); */
+	/* padding-inline-start: var(--gutter); */
+	/* padding-inline-end: var(--gutter); */
+	position: relative;
+
+    /* margin-block-start: var(--size-step-0); */
+    margin-inline: var(--size-step-2);
+}
+
+.about-title {
+    margin-block-start: var(--size-step-0);
+    margin-block-end: var(--size-step-0);
+    color: var(--color-end-light-text);
+}
+
+.about-me-par {
+    /* margin-block-start: var(--size-step-2); */
+    margin-block-end: var(--size-step-2);
+
+    font-size: .7em;
+    line-height: 1.6;
+    letter-spacing: var(--tracking-s);
+    color: var(--color-end-light-text);
+}
 
 .cluster-nav-end {
     display: flex;
@@ -508,4 +995,126 @@ nav ul li a:not(.link-active) {
     gap: var(--size-step-2, 1rem);
     justify-content: center;
     align-items: center;
+
+    margin-block-start: var(--size-step-2);
 }
+
+/* .about-me links */
+
+.end-link,
+.end-link *,
+.end-link :after,
+.end-link :before,
+.end-link:after,
+.end-link:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.end-link {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+    color: var(--color-end-light-link-text);
+    cursor: pointer;
+    font-size: var(--size-step-0);
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+    text-transform: uppercase;
+  
+    margin-block-start: var(--size-step-0);
+    margin-block-end: var(--size-step-0);
+}
+
+.end-link:disabled {
+  cursor: default;
+}
+
+.end-link:-moz-focusring {
+  outline: auto;
+}
+
+.end-link svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.end-link [hidden] {
+  display: none;
+}
+
+.end-link{
+  --margin: 20%;
+  background: none;
+  -webkit-clip-path: polygon(
+    calc(var(--margin) * -1) 0,
+    calc(100% + var(--margin)) 0,
+    calc(100% + var(--margin)) 100%,
+    calc(var(--margin) * -1) 100%
+  );
+
+  clip-path: polygon(
+    calc(var(--margin) * -1) 0,
+    calc(100% + var(--margin)) 0,
+    calc(100% + var(--margin)) 100%,
+    calc(var(--margin) * -1) 100%
+  );
+
+  display: inline;
+  font-weight: 400;
+  -webkit-mask-image: none;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.end-link:hover {
+  transform: scale(1.1);
+}
+
+.end-link:before {
+  background-color: var(--color-start-light-background);
+  content: "";
+  height: 2px;
+  left: -100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  width: calc(100% + var(--margin) * 2);
+}
+
+.end-link:hover:before {
+  transform: translate(calc(100% - var(--margin) * 2), -50%);
+}
+
+.about-me-img-container {
+    padding-inline-start: var(--size-step-0);
+    padding-inline-end: var(--size-step-0);
+
+    /* padding: var(--size-step-4); */
+}
+
+.about-me-frame {
+    --n: 16; /* numerator */
+    --d: 9; /* denominator */
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.about-me-frame > img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+
+
+
