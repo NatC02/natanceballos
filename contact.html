@@ -4,17 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>John Doe - Frontend Developer</title>
+        <title>Natan Ceballos - Frontend Developer</title>
         <link rel="canonical" href="https://natanceballos.com/portfolio">
-        <meta property="og:site_name" content="John Doe Portfolio">
-        <meta property="og:title" content="John Doe Portfolio">
+        <meta property="og:site_name" content="Natan Ceballos Portfolio">
+        <meta property="og:title" content="Natan Ceballos Portfolio">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://natanceballos.com/">
         <meta name="twitter:card" content="summary_large_image">
         <meta property="og:image" content="https://natanceballos.com/images/social-share.png">
         <meta name="twitter:image" content="https://natanceballos.com/images/social-share.png">
-        <meta property="og:image:alt" content="Page image for John Doe">
-        <meta name="twitter:image:alt" content="Page image for John Doe">
+        <meta property="og:image:alt" content="Page image for Natan Ceballos">
+        <meta name="twitter:image:alt" content="Page image for Natan Ceballos">
         <meta name="description" content="Fullstack developer specializing in HTML, CSS, JS, React, MongoDB, Express, and NodeJS, delivering SEO-friendly and visually stunning web applications that are efficient and easy to use.">
         <meta name="twitter:description" content="Fullstack developer specializing in HTML, CSS, JS, React, MongoDB, Express, and NodeJS, delivering SEO-friendly and visually stunning web applications that are efficient and easy to use.">
         <meta property="og:description" content="Fullstack developer specializing in HTML, CSS, JS, React, MongoDB, Express, and NodeJS, delivering SEO-friendly and visually stunning web applications that are efficient and easy to use.">
@@ -33,551 +33,262 @@
         </script>
 
         <link type="text/css" rel="stylesheet" href="./css/reset.css">
-        <link type="text/css" rel="stylesheet" href="./css/contact/contact.css">
-        <!-- <link type="text/css" rel="stylesheet" href="./css/portfolio/portfolio.css"> -->
-        <link type="text/css" rel="stylesheet" href="./css//portfolio/portfolio-dark.css">
-        <link type="text/css" rel="stylesheet" href="./css/float-toggle.css">
+        <link type="text/css" rel="stylesheet" href="./css/contact/form.css">
+        <link type="text/css" rel="stylesheet" href="./css/portfolio/portfolio.css">
+        <link type="text/css" rel="stylesheet" href="./css/portfolio/portfolio-light.css">
+        <!-- <link type="text/css" rel="stylesheet" href="./css/float-toggle.css"> -->
     
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=abhaya-libre:400,500,600,700,800" rel="stylesheet" />
-
+        <link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i" rel="stylesheet" />
       </head>
     <body toggle-dark>
-        <!-- load the correct img based on dark-mode setting -->
-        <script>
-          window.onload = function() {
-            // switch images based on dark mode
-            currentImg = localStorage.getItem('currentImg') || 'imgLight';
-            toggleSwitchImg();
+    <!-- load the correct img based on dark-mode setting -->
+    <script>
+      window.onload = function() {
+        // switch images based on dark mode
+        currentImg = localStorage.getItem('currentImg') || 'imgLight';
+        toggleSwitchImg();
 
-            // activate if dark mode is on
-            if (checkbox.checked) {
-              toggleDarkMode();
-            }
-          };
-        </script>
+        // activate if dark mode is on
+        // if (checkbox.checked) {
+        //   toggleDarkMode();
+        // }
+      };
+    </script>
+      <div class="page-sidebar" toggle-dark>
+        <main class="page-start-side" toggle-dark>
+        
+          <header role="banner">
+            <nav role="navigation">
+                <ul role='list' class="cluster-nav-start"> 
+                  <!-- <li role="listitem"> -->
+                    <!-- I have no choice but to put the element here, without refactoring ALOT of my code to make an entire dark-mode page and saving the state on subsequent visits of refreshes -->
+                    <!-- <label class="floating-container"><input id="floating-checkbox" type="checkbox" checked="false"></label> -->
+                  <!-- </li> -->
+                  <li role="listitem" id="image-container">
+                    <picture imgLight>
+                      <img id="default-image" src="./img/avatar/light-closed.png" alt="Pixel art of Natan Ceballos with eyes closed" >
+                      <img id="hover-image" src="./img/avatar/light-open.png" alt="Pixel art of Natan Ceballos with eyes opened" >
+                    </picture>
 
-<div class="page-sidebar" toggle-dark>
-  <main class="page-start-side" toggle-dark>
+                    <picture imgDark>
+                      <img id="default-image" src="./img/avatar/dark-closed.png" alt="Cartoon image of Natan Ceballos with eyes closed" >
+                      <img id="hover-image" src="./img//avatar/dark-open.png" alt="Cartoon image of Natan Ceballos with eyes opened" >
+                    </picture>                                                 
+                  </li>
+                  <!-- <li role="listitem">
+                    <a href="/index.html" role="link" tabindex="-1">
+                      <button class="link" aria-label="Home">Home</button>  
+                    </a>
+                  </li> -->
+                  <li role="listitem">
+                    <a href="/index.html" role="link" tabindex="-1">
+                      <button class="link" aria-label="Portfolio" toggle-dark>Portfolio</button>
+                    </a>
+                  </li>
+                  <li role="listitem">
+                      <a href="/contact.html" role="link" aria-current="page" tabindex="-1" toggle-dark>
+                        <button class="link" aria-label="Contact">Contact</button>
+                      </a>
+                  </li>
+                </ul>
+            </nav>
+        </header>
   
-    <header role="banner">
-        <nav role="navigation">
-            <ul role='list' class="cluster-nav-start"> 
-              <li role="listitem">
-                <!-- I have no choice but to put the element here, without refactoring ALOT of my code to make an entire dark-mode page and saving the state on subsequent visits of refreshes -->
-                <label class="floating-container"><input id="floating-checkbox" type="checkbox"></label>               
-              </li>                           
-              <li role="listitem" id="image-container">
+          <!-- INTRO SECTION -->
+          <article class="box-intro" toggle-dark>
+              <h1 class="intro-title highlight-start" role="heading" aria-level="1" toggle-dark>Hire Me</h1>
+              <p class="intro-par" aria-labelledby="Natan's tagline" aria-role="paragraph" toggle-dark>
+                Need expert design and front-end dev for your new project? Contact me with project details for a prompt reply on how I can elevate it.     
+              </p>
+          </article>
+
+          <div class="form-container">
+            <form  class="wrapper flow" name="contact" action="/contact-thank-you.html" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="Enquiry">
+              <div>
+                <label for="name">Name
+                </label> 
+                <input type="text" id="name" name="name" required="">
+              </div>
+              <div>
+                <label for="email">Email
+                </label> 
+                <input type="email" id="email" name="email" required="">
+              </div>
+              <div>
+                <label for="budget">Budget
+                </label> 
+                <input type="text" id="budget" name="budget" required="" aria-described-by="budget_helper">
+                <p id="budget_helper">I just want to get a rough estimate so I can understand how I can best support you.
+                </p>
+              </div>
+              <div>
+                <label for="deadline">Deadline
+                </label> 
+                <input type="text" id="deadline" name="deadline" required="" aria-described-by="deadline_helper">
+                <p id="deadline_helper">If there isn't a firm deadline, it's best to leave this blank. A general timeframe would still be appreciated though.
+                </p>
+              </div>
+              <div>
+                <label for="details">Any other information?
+                </label> 
+                <textarea id="details" name="details" aria-described-by="details_helper" rows="10">
+                </textarea>
+                  <p id="details_helper">Think there's anything else I should know to get a better grip on this project?
+                </p>
+              </div>
+              <div>
+                <button class="button">Send
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Copyright Symbol -->
+          <footer>
+            <span class="with-icon" toggle-dark>
+              <svg class="img-c icon" imgLight width='20px' height='20px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>copyright_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Business' transform='translate(-528.000000, -96.000000)' fill-rule='nonzero'><g id='copyright_line' transform='translate(528.000000, 96.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M12,2 C17.5228,2 22,6.47715 22,12 C22,17.5228 17.5228,22 12,22 C6.47715,22 2,17.5228 2,12 C2,6.47715 6.47715,2 12,2 Z M12,4 C7.58172,4 4,7.58172 4,12 C4,16.4183 7.58172,20 12,20 C16.4183,20 20,16.4183 20,12 C20,7.58172 16.4183,4 12,4 Z M12,7 C13.4935,7 14.835,7.65607 15.7497,8.69244 C16.1152,9.10651 16.0758,9.73845 15.6617,10.1039 C15.2477,10.4694 14.6157,10.43 14.2503,10.0159 C13.6991,9.39144 12.8959,9 12,9 C10.3431,9 9,10.3431 9,12 C9,13.6569 10.3431,15 12,15 C12.8959,15 13.6991,14.6086 14.2503,13.9841 C14.6157,13.57 15.2477,13.5306 15.6617,13.8961 C16.0758,14.2616 16.1152,14.8935 15.7497,15.3076 C14.835,16.3439 13.4935,17 12,17 C9.23858,17 7,14.7614 7,12 C7,9.23858 9.23858,7 12,7 Z' id='形状' fill='#81846F'></path></g></g></g></svg>
+              
+              <svg class="img-c icon" imgDark width='20px' height='20px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>copyright_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Business' transform='translate(-528.000000, -96.000000)' fill-rule='nonzero'><g id='copyright_line' transform='translate(528.000000, 96.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M12,2 C17.5228,2 22,6.47715 22,12 C22,17.5228 17.5228,22 12,22 C6.47715,22 2,17.5228 2,12 C2,6.47715 6.47715,2 12,2 Z M12,4 C7.58172,4 4,7.58172 4,12 C4,16.4183 7.58172,20 12,20 C16.4183,20 20,16.4183 20,12 C20,7.58172 16.4183,4 12,4 Z M12,7 C13.4935,7 14.835,7.65607 15.7497,8.69244 C16.1152,9.10651 16.0758,9.73845 15.6617,10.1039 C15.2477,10.4694 14.6157,10.43 14.2503,10.0159 C13.6991,9.39144 12.8959,9 12,9 C10.3431,9 9,10.3431 9,12 C9,13.6569 10.3431,15 12,15 C12.8959,15 13.6991,14.6086 14.2503,13.9841 C14.6157,13.57 15.2477,13.5306 15.6617,13.8961 C16.0758,14.2616 16.1152,14.8935 15.7497,15.3076 C14.835,16.3439 13.4935,17 12,17 C9.23858,17 7,14.7614 7,12 C7,9.23858 9.23858,7 12,7 Z' id='形状' fill='#FFFFFFFF'></path></g></g></g></svg>
+                2023 Natan Ceballos
+              </span> </br>
+            <i toggle-dark>Don't forget to update your copyright date on New Year's Day.</i>
+          </footer>
+        </main>
+
+        <!-- PAGE END SIDE -->
+        <div class="page-end-side">
+          <nav role="navigation">
+            <ul role='list' class="cluster-nav-end"> 
+                <li role="listitem">
+                  <a href="https://www.linkedin.com/in/natanceballos" role="link" tabindex="-1">
+                    <button class="end-link" aria-label="LinkedIn" toggle-dark><span>LinkedIn</span></button>  
+                  </a>
+                </li>
+                <li role="listitem">
+                  <a href="https://github.com/NatC02" role="link" tabindex="-1">
+                    <button class="end-link" aria-label="Github" toggle-dark><span>GitHub</span></button>
+                  </a>
+                </li>
+                <!-- <li role="listitem">
+                    <a href="/contact.html" role="link" tabindex="-1">
+                      <button class="end-link" aria-label="Journal"><span>Journal</span></button>
+                    </a>
+                </li> -->
+            </ul>
+          </nav>    
+
+          <!-- About Me Section -->
+          <article class="about-box">
+            <div class="about-me-img-container">
+              <!-- this is a little weird. But we're setting display to none on the element that has the custom attribute toggle-dark -->                
+              <!-- also refactor the class name img-c make it make more sense -->                                  
+              <picture class="about-me-frame" imgLight>
+                <source class="img-c" srcset="./img/portfolio/about-me/light-about-hero.avif" type="image/avif">
+                <source class="img-c" srcset="./img/portfolio/about-me/light-about-hero.webp" type="image/webp">
+                <img class="img-c" src="./img/portfolio/about-me/light-about-hero.png" alt="Child longing for adventure.">
+              </picture>
+
+              <picture imgDark>
+                <source class="img-c" srcset="./img/portfolio/about-me/dark-about-hero.avif" type="image/avif">
+                <source class="img-c" srcset="./img/portfolio/about-me/dark-about-hero.webp" type="image/webp">
+                <img class="img-c"  src="./img/portfolio/about-me/dark-about-hero.png" alt="Man longing for adventure.">
+              </picture>
+            </div>
+
+            <h3 class="about-title highlight-end center" role="heading" aria-level="3" toggle-dark>New Jersey, United States</h3>
+
+            <p class="about-me-par" toggle-dark>
+              As a lifelong learner, I am constantly on the lookout for new ways to level up the web. In fact, I am so passionate about it that you can keep up with my thoughts and updates on my community blog (coming soon). I am all in when it comes to the web, and have sharpened my skills in technologies such as Wordpress, React, Gatsby, Node, and AWS as a Frontend developer to deliver an exceptional web experience. 
+
+              <!-- The first time I knew I wanted to go into tech was when I broke my DS in two thinking I could put it back together.  -->
+            </p>
+              
+            <h3 class="about-title highlight-end center" role="heading" aria-level="3" toggle-dark>
+              Interests
+            </h3>
+
+            <p class="about-me-par" toggle-dark>
+              When I'm not coding or debugging, you can find me diving into a good book, writing on my community blog (coming soon), immersing myself in a game of Dungeons & Dragons or Pathfinder, journaling my thoughts, watching thought-provoking documentaries, going out for walks, indulging in YouTube videogame animation, and studying the art of videography and cinematography. My interests may be diverse, but they all feed my passion for creating and bringing new ideas to life, just as I do in my work as a Frontend Developer. Fun fact: My favorite video game is Red Dead Redemption 2!
+            </p>
+
+            <ul class="hobbies-grid" role="list" data-rows="masonry" data-layout="50-50">
+              <li>
                 <picture imgLight>
-                  <!-- <source
-                    sizes="(max-width: 2161px) 100vw"
-                    srcset="hero-1920w.avif 1920w, hero-1280w.avif 1280w, hero-640w.avif 640w, hero-320w.avif 320w"
-                    type="image/avif"
-                  />
-                  <source
-                    sizes="(max-width: 2161px) 100vw"
-                    srcset=" hero-1920w.webp 1920w, hero-1280w.webp 1280w, hero-640w.webp 640w, hero-320w.webp 320w"
-                    type="image/webp"
-                  />
-                  <source
-                    sizes="(max-width: 2161px) 100vw"
-                    srcset="hero-1920w.jpg 1920w, hero-1280w.jpg 1280w, hero-640w.jpg 640w, hero-320w.jpg 320w"
-                    type="image/jpeg"
-                  /> -->
-
-                  <!-- <source srcset="image.avif" type="image/avif"> -->
-                  <!-- <source srcset="image.webp" type="image/webp"> -->
-
-                  <img id="default-image" src="./img/portfolio/light-mode/avatar/closed-eyes/closed-eyes.png" alt="Cartoon image of John Doe with eyes closed" >
-                  <img id="hover-image" src="./img/portfolio/light-mode/avatar/open-eyes/open-eyes.png" alt="Cartoon image of John Doe with eyes opened" >
+                  <source class="img-c" srcset="./img/portfolio/about-me/light-read.avif" type="image/avif">
+                  <source class="img-c" srcset="./img/portfolio/about-me/light-read.webp" type="image/webp">
+                  <img class="img-c" src="./img/portfolio/about-me/light-read.png" alt="Pixel art, stack of books.">
                 </picture>
 
+                <picture imgDark>
+                  <source class="img-c" srcset="./img/portfolio/about-me/dark-read.avif" type="image/avif">
+                  <source class="img-c" srcset="./img/portfolio/about-me/dark-read.webp" type="image/webp">
+                  <img class="img-c" src="./img/portfolio/about-me/dark-read.png" alt="Cartoon art, stack of books.">
+                </picture>
+              </li>
+              
+              <li>
+                <picture imgLight>
+                  <source class="img-c" srcset="./img/portfolio/about-me/light-dnd.avif" type="image/avif">
+                  <source class="img-c" srcset="./img/portfolio/about-me/light-dnd.webp" type="image/webp">
+                  <img class="img-c" src="./img/portfolio/about-me/light-dnd.png" alt="Pixel art, Dungeons and Dragons character." imgLight>
+                </picture>
 
                 <picture imgDark>
-                  <img id="default-image" src="./img/portfolio/dark-mode/avatar/closed-eyes/avatar.png" alt="Cartoon image of John Doe with eyes closed" >
-                  <img id="hover-image" src="./img/portfolio/dark-mode/avatar/open-eyes/avatar.png" alt="Cartoon image of John Doe with eyes opened" >
-                </picture>                          
-
-
-
-
-
-
-
-
-                 
+                  <source class="img-c" srcset="./img/portfolio/about-me/dark-dnd.avif" type="image/avif">
+                  <source class="img-c" srcset="./img/portfolio/about-me/dark-dnd.webp" type="image/webp">
+                  <img class="img-c" src="./img/portfolio/about-me/dark-dnd.png" alt="Cartoon art, Dungeons and Dragons character." imgDark>
+                </picture>
               </li>
-              <li role="listitem">
-                <a href="/index.html" role="link">
-                  <button class="link" aria-label="Home">Home</button>  
-                </a>
+          
+              <li>
+                <picture imgLight>
+                  <source class="img-c" srcset="./img/portfolio/about-me/light-journal.avif" type="image/avif">
+                  <source class="img-c" srcset="./img/portfolio/about-me/light-journal.webp" type="image/webp">
+                  <img class="img-c" src="./img/portfolio/about-me/light-journal.png" alt="Pixel art, a coffee cup and a laptop." imgLight>
+                </picture>
+
+                <picture imgDark>
+                  <source class="img-c" srcset="./img/portfolio/about-me/dark-journal.avif" type="image/avif">
+                  <source class="img-c" srcset="./img/portfolio/about-me/dark-journal.webp" type="image/webp">
+                  <img class="img-c" src="./img/portfolio/about-me/dark-journal.png" alt="Cartoon art, Dungeons and Dragons character." imgDark>
+                </picture>
               </li>
-              <li role="listitem">
-                <a href="/portfolio.html" aria-current="page" role="link" >
-                  <button class="link" aria-label="Portfolio">Portfolio</button>
-                </a>
+
+              <li>
+                <picture imgLight>
+                  <source class="img-c" srcset="./img/portfolio/about-me/light-game.avif" type="image/avif">
+                  <source class="img-c" srcset="./img/portfolio/about-me/light-game.webp" type="image/webp">
+                  <img class="img-c" src="./img/portfolio/about-me/light-game.png" alt="Pixel art, young man taking a walk." imgLight>
+                </picture>
+
+                <picture imgDark>
+                  <source class="img-c" srcset="./img/portfolio/about-me/dark-game.avif" type="image/avif">
+                  <source class="img-c" srcset="./img/portfolio/about-me/dark-game.webp" type="image/webp">
+                  <img class="img-c" src="./img/portfolio/about-me/dark-game.png" alt="Cartoon art, young man taking a walk." imgDark>
+                </picture>
               </li>
-              <li role="listitem">
-                  <a href="/contact.html" role="link">
-                    <button class="link" aria-label="Contact">Contact</button>
-                  </a>
+
+              <li>
+                <picture imgLight>
+                  <source class="img-c" srcset="./img/portfolio/about-me/light-walks.avif" type="image/avif">
+                  <source class="img-c" srcset="./img/portfolio/about-me/light-walks.webp" type="image/webp">
+                  <img class="img-c" src="./img/portfolio/about-me/light-walks.png" alt="Pixel art, young man taking a walk." imgLight>
+                </picture>
+
+                <picture imgDark>
+                  <source class="img-c" srcset="./img/portfolio/about-me/dark-walks.avif" type="image/avif">
+                  <source class="img-c" srcset="./img/portfolio/about-me/dark-walks.webp" type="image/webp">
+                  <img class="img-c" src="./img/portfolio/about-me/dark-walks.png" alt="Cartoon art, young man taking a walk." imgDark>
+                </picture>
               </li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- INTRO SECTION -->
-    <article class="box-intro" toggle-dark>
-      <h1 class="intro-title highlight-start" role="heading" aria-level="1" toggle-dark>Hire me</h1>
-      <p class="intro-par" aria-labelledby="Natan's tagline" aria-role="paragraph" toggle-dark>
-        Need expert design and front-end dev for your new project? Contact me with project details for a prompt reply on how I can elevate it.            
-      </p>
-    </article>
-
-    <div class="form-container">
-      <form  class="wrapper flow" name="contact" action="/contact-thank-you" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="Enquiry">
-        <div>
-          <label for="name">Name
-          </label> 
-          <input type="text" id="name" name="name" required="">
-        </div>
-        <div>
-          <label for="email">Email
-          </label> 
-          <input type="email" id="email" name="email" required="">
-        </div>
-        <div>
-          <label for="budget">Budget
-          </label> 
-          <input type="text" id="budget" name="budget" required="" aria-described-by="budget_helper">
-          <p id="budget_helper">I just need a ballpark so I know how I can best help you.
-          </p>
-        </div>
-        <div>
-          <label for="deadline">Deadline
-          </label> 
-          <input type="text" id="deadline" name="deadline" required="" aria-described-by="deadline_helper">
-          <p id="deadline_helper">If there isn’t a hard deadline, leave this blank. A rough timescale would be helpful too.
-          </p>
-        </div>
-        <div>
-          <label for="details">Any other information?
-          </label> 
-          <textarea id="details" name="details" aria-described-by="details_helper" rows="10">
-          </textarea>
-            <p id="details_helper">Is there anything else you think I need to know to help me learn more about this project?
-          </p>
-        </div>
-        <div>
-          <button class="button">Send
-          </button>
-        </div>
-      </form>
-    </div>
-        
-    <!-- Copyright Symbol -->
-    <footer>
-      <div class="icon-box">
-        <span class="dont-forget">
-          <?xml version='1.0' encoding='UTF-8'?><svg width='16px' height='16px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>copyright_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Business' transform='translate(-528.000000, -96.000000)' fill-rule='nonzero'><g id='copyright_line' transform='translate(528.000000, 96.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M12,2 C17.5228,2 22,6.47715 22,12 C22,17.5228 17.5228,22 12,22 C6.47715,22 2,17.5228 2,12 C2,6.47715 6.47715,2 12,2 Z M12,4 C7.58172,4 4,7.58172 4,12 C4,16.4183 7.58172,20 12,20 C16.4183,20 20,16.4183 20,12 C20,7.58172 16.4183,4 12,4 Z M12,7 C13.4935,7 14.835,7.65607 15.7497,8.69244 C16.1152,9.10651 16.0758,9.73845 15.6617,10.1039 C15.2477,10.4694 14.6157,10.43 14.2503,10.0159 C13.6991,9.39144 12.8959,9 12,9 C10.3431,9 9,10.3431 9,12 C9,13.6569 10.3431,15 12,15 C12.8959,15 13.6991,14.6086 14.2503,13.9841 C14.6157,13.57 15.2477,13.5306 15.6617,13.8961 C16.0758,14.2616 16.1152,14.8935 15.7497,15.3076 C14.835,16.3439 13.4935,17 12,17 C9.23858,17 7,14.7614 7,12 C7,9.23858 9.23858,7 12,7 Z' id='形状' fill='#81846FFF'></path></g></g></g></svg>
-        </svg>
-          2023 John Doe <br/>
-          <i>Don't forget to update your copyright date on New Year's Day.</i>
-        </span>  
-      </div>
-    </footer>
-  </main>
-
-  <div class="page-end-side">
-    <nav role="navigation">
-      <ul role='list' class="cluster-nav-end"> 
-          <li role="listitem">
-            <a href="https://www.linkedin.com/in/natanceballos" role="link">
-              <button class="end-link" aria-label="LinkedIn"><span>LinkedIn</span></button>  
-            </a>
-          </li>
-          <li role="listitem">
-            <a href="https://github.com/NatC02" role="link" >
-              <button class="end-link" aria-label="Github"><span>GitHub</span></button>
-            </a>
-          </li>
-          <li role="listitem">
-              <a href="/contact.html" role="link">
-                <button class="end-link" aria-label="Journal"><span>Journal</span></button>
-              </a>
-          </li>
-      </ul>
-    </nav>    
-
-    <!-- <div class="center"> -->
-
-    <article class="about-box" toggle-dark>
-      
-      <div class="about-me-img-container">
-        <picture class="about-me-frame" toggle-dark>
-          <!-- <source
-            sizes="(max-width: 2161px) 100vw"
-            srcset="hero-1920w.avif 1920w, hero-1280w.avif 1280w, hero-640w.avif 640w, hero-320w.avif 320w"
-            type="image/avif"
-          />
-          <source
-            sizes="(max-width: 2161px) 100vw"
-            srcset=" hero-1920w.webp 1920w, hero-1280w.webp 1280w, hero-640w.webp 640w, hero-320w.webp 320w"
-            type="image/webp"
-          />
-          <source
-            sizes="(max-width: 2161px) 100vw"
-            srcset="hero-1920w.jpg 1920w, hero-1280w.jpg 1280w, hero-640w.jpg 640w, hero-320w.jpg 320w"
-            type="image/jpeg"
-          /> -->
-
-          <!-- this is a little weird, I admit. But we're setting display to none on the element that has the custom attribute toggle-dark -->                
-          <!-- also refactor the class name img-c make it make more sense -->                
-          <img class="img-c" src="./img/portfolio/about-me/young-boy-adventure.png" alt="Child longing for adventure." imgLight>
-            
-          <img class="img-c"  src="./img/portfolio/about-me/young-man-adventure.png" alt="Man longing for adventure staring at the moon." imgDark>
-
-        </picture>
-      </div>
-
-
-      <h3 class="about-title highlight-end center" role="heading" aria-level="3" toggle-dark>New Jersey, United States</h3>
-
-      <p class="about-me-par" toggle-dark>
-        As a lifelong learner, I am constantly on the lookout for new ways to level up the web. In fact, I am so passionate about it that you can keep up with my thoughts and updates on my community blog (coming soon). I am all in when it comes to the web, and have sharpened my skills in technologies such as Wordpress, React, Gatsby, Node, and AWS as a Frontend developer to deliver an exceptional web experience. 
-      </p>
-        
-        <!-- I am deeply in love with the web and have honed my skills in different technologies such as Wordpress, React, Gatsby, Node, and Amazon Web Services as a Frontend developer to bring a superior web experience. As a lifelong learner, I am always on the lookout for new ways to improve the web, let's join forces and push the web to its limits. -->
-
-      <h3 class="about-title highlight-end center" role="heading" aria-level="3" toggle-dark>
-        <!-- On my spare time... -->
-        Hobbies
-      </h3>
-
-      <p class="about-me-par" toggle-dark>
-        When I'm not coding or debugging, you can find me diving into a good book, writing on my community blog (coming soon), immersing myself in a game of Dungeons & Dragons (Pathfinder), journaling my thoughts, watching thought-provoking documentaries, going out for walks, indulging in YouTube videogame animation, and studying the art of videography and cinematography. My interests may be diverse, but they all feed my passion for creating and bringing new ideas to life, just as I do in my work as a Frontend Developer.
-      </p>
-
-
-      <div class="grid">
-
-      <div class="box">
-        <div class="frame">
-          <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/light-reading-m.png" alt="Pixel art, stack of books." imgLight>
+          </article>
         </div>
       </div>
-
-
-      <div class="box">
-        <div class="frame">
-          <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/light-reading-m.png" alt="Pixel art, stack of books." imgLight>
-        </div>
-      </div>
-
-
-      <div class="box">
-        <div class="frame">
-          <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/light-reading-m.png" alt="Pixel art, stack of books." imgLight>
-        </div>
-      </div>
-
-
-      <div class="box">
-        <div class="frame">
-          <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/light-reading-m.png" alt="Pixel art, stack of books." imgLight>
-        </div>
-      </div>
-
-
-        <!-- <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/light-reading-m.png" alt="Pixel art, stack of books." imgLight>
-        <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/light-dnd-m.png" alt="Pixel art, Dungeons and Dragons character." imgLight>
-        <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/light-journaling-m.png" alt="Pixel art, a coffee cup and a laptop." imgLight>
-        <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/light-walks-m.png" alt="Pixel art, young man taking a walk." imgLight>
-  
-        <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/reading.png" alt="Cartoon art, stack of books." imgDark>
-        <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/dnd.png" alt="Cartoon art, Dungeons and Dragons character." imgDark>
-        <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/journaling.png" alt="Cartoon art, a coffee cup and a laptop." imgDark>
-        <img class="img-c img-space" src="./img/portfolio/about-me/hobbies/walks.png" alt="Cartoon art, young man taking a walk." imgDark> -->
-
-      </div>
-   
-    </article>
-
-  </div>
-</div>
-<script defer src="./js/count-of-hovered-element.js"></script>
-<script defer src="./js/toggle-dark.js"></script>
-</body>
+    <script defer src="./js/count-of-hovered-element.js"></script>
+    <script defer src="./js/toggle-dark.js"></script>
+    <script defer src="./js/active-url-link.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- <main class="page-start-side" toggle-dark>
-
-        <header role="banner">
-          <nav role="navigation">
-              <ul role='list' class="cluster-nav-start"> 
-                <li role="listitem">
-                  <label class="floating-container"><input id="floating-checkbox" type="checkbox"></label>               
-                </li>                           
-                <li role="listitem" id="image-container">
-                  <picture imgLight>
-                    <img id="default-image" src="./img/portfolio/light-mode/avatar/closed-eyes/closed-eyes.png" alt="Cartoon image of John Doe with eyes closed" >
-                    <img id="hover-image" src="./img/portfolio/light-mode/avatar/open-eyes/open-eyes.png" alt="Cartoon image of John Doe with eyes opened" >
-                  </picture>
-
-
-                  <picture imgDark>
-                    <img id="default-image" src="./img/portfolio/dark-mode/avatar/closed-eyes/avatar.png" alt="Cartoon image of John Doe with eyes closed" >
-                    <img id="hover-image" src="./img/portfolio/dark-mode/avatar/open-eyes/avatar.png" alt="Cartoon image of John Doe with eyes opened" >
-                  </picture>                          
-                    
-                </li>
-                <li role="listitem">
-                  <a href="/index.html" role="link">
-                    <button class="link" aria-label="Home">Home</button>  
-                  </a>
-                </li>
-                <li role="listitem">
-                  <a href="/portfolio.html" aria-current="page" role="link" >
-                    <button class="link" aria-label="Portfolio">Portfolio</button>
-                  </a>
-                </li>
-                <li role="listitem">
-                    <a href="/contact.html" role="link">
-                      <button class="link" aria-label="Contact">Contact</button>
-                    </a>
-                </li>
-              </ul>
-          </nav>
-      </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <article class="box-intro" toggle-dark>
-            <h1 class="intro-title highlight-start" role="heading" aria-level="1" toggle-dark>Hire me</h1>
-            <p class="intro-par" aria-labelledby="Natan's tagline" aria-role="paragraph" toggle-dark>
-              Need expert design and front-end dev for your new project? Contact me with project details for a prompt reply on how I can elevate it.            
-            </p>
-        </article>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="form-container">
-          <form  class="wrapper flow" name="contact" action="/contact-thank-you" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="Enquiry">
-            <div>
-              <label for="name">Name
-              </label> 
-              <input type="text" id="name" name="name" required="">
-            </div>
-            <div>
-              <label for="email">Email
-              </label> 
-              <input type="email" id="email" name="email" required="">
-            </div>
-            <div>
-              <label for="budget">Budget
-              </label> 
-              <input type="text" id="budget" name="budget" required="" aria-described-by="budget_helper">
-              <p id="budget_helper">I just need a ballpark so I know how I can best help you.
-              </p>
-            </div>
-            <div>
-              <label for="deadline">Deadline
-              </label> 
-              <input type="text" id="deadline" name="deadline" required="" aria-described-by="deadline_helper">
-              <p id="deadline_helper">If there isn’t a hard deadline, leave this blank. A rough timescale would be helpful too.
-              </p>
-            </div>
-            <div>
-              <label for="details">Any other information?
-              </label> 
-              <textarea id="details" name="details" aria-described-by="details_helper" rows="10">
-              </textarea>
-                <p id="details_helper">Is there anything else you think I need to know to help me learn more about this project?
-              </p>
-            </div>
-            <div>
-              <button class="button">Send
-              </button>
-            </div>
-          </form>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <footer>
-          <div class="icon-box">
-            <span class="dont-forget">
-              <?xml version='1.0' encoding='UTF-8'?><svg width='16px' height='16px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>copyright_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Business' transform='translate(-528.000000, -96.000000)' fill-rule='nonzero'><g id='copyright_line' transform='translate(528.000000, 96.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M12,2 C17.5228,2 22,6.47715 22,12 C22,17.5228 17.5228,22 12,22 C6.47715,22 2,17.5228 2,12 C2,6.47715 6.47715,2 12,2 Z M12,4 C7.58172,4 4,7.58172 4,12 C4,16.4183 7.58172,20 12,20 C16.4183,20 20,16.4183 20,12 C20,7.58172 16.4183,4 12,4 Z M12,7 C13.4935,7 14.835,7.65607 15.7497,8.69244 C16.1152,9.10651 16.0758,9.73845 15.6617,10.1039 C15.2477,10.4694 14.6157,10.43 14.2503,10.0159 C13.6991,9.39144 12.8959,9 12,9 C10.3431,9 9,10.3431 9,12 C9,13.6569 10.3431,15 12,15 C12.8959,15 13.6991,14.6086 14.2503,13.9841 C14.6157,13.57 15.2477,13.5306 15.6617,13.8961 C16.0758,14.2616 16.1152,14.8935 15.7497,15.3076 C14.835,16.3439 13.4935,17 12,17 C9.23858,17 7,14.7614 7,12 C7,9.23858 9.23858,7 12,7 Z' id='形状' fill='#81846FFF'></path></g></g></g></svg>
-            </svg>
-              2023 John Doe <br/>
-              <i>Don't forget to update your copyright date on New Year's Day.</i>
-            </span>  
-          </div>
-        </footer>
-      </main> -->
