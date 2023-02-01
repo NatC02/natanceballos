@@ -33,10 +33,9 @@
         </script>
 
         <link type="text/css" rel="stylesheet" href="./css/reset.css">
-        <!-- <link type="text/css" rel="stylesheet" href="./css/avatar.css"> -->
         <link type="text/css" rel="stylesheet" href="./css/portfolio/portfolio.css">
-        <link type="text/css" rel="stylesheet" href="./css/portfolio/portfolio-dark.css">
-        <link type="text/css" rel="stylesheet" href="./css/float-toggle.css">
+        <link type="text/css" rel="stylesheet" href="./css/portfolio/portfolio-light.css">
+        <!-- <link type="text/css" rel="stylesheet" href="./css/float-toggle.css"> -->
     
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i" rel="stylesheet" />
@@ -63,10 +62,10 @@
           <header role="banner">
               <nav role="navigation">
                   <ul role='list' class="cluster-nav-start"> 
-                    <li role="listitem">
+                    <!-- <li role="listitem"> -->
                       <!-- I have no choice but to put the element here, without refactoring ALOT of my code to make an entire dark-mode page and saving the state on subsequent visits of refreshes -->
-                      <label class="floating-container"><input id="floating-checkbox" type="checkbox" checked="false"></label>               
-                    </li>                           
+                      <!-- <label class="floating-container"><input id="floating-checkbox" type="checkbox" checked="false"></label> -->
+                    <!-- </li> -->
                     <li role="listitem" id="image-container">
                       <picture imgLight>
                         <img id="default-image" src="./img/avatar/light-closed.png" alt="Pixel art of Natan Ceballos with eyes closed" >
@@ -84,13 +83,13 @@
                       </a>
                     </li> -->
                     <li role="listitem">
-                      <a href="/index.html" aria-current="page" role="link" tabindex="-1">
-                        <button class="link" aria-label="Portfolio">Portfolio</button toggle-dark>
+                      <a href="/index.html" aria-current="page" role="link" tabindex="-1" toggle-dark>
+                        <button class="link" aria-label="Portfolio">Portfolio</button>
                       </a>
                     </li>
                     <li role="listitem">
                         <a href="/contact.html" role="link" tabindex="-1">
-                          <button class="link" aria-label="Contact">Contact</button toggle-dark>
+                          <button class="link" aria-label="Contact" toggle-dark>Contact</button>
                         </a>
                     </li>
                   </ul>
@@ -102,7 +101,7 @@
               <h1 class="intro-title highlight-start" role="heading" aria-level="1" toggle-dark>Hello, I'm Natan!</h1>
               <h2 class="intro-sub-title highlight-start" role="heading" aria-level="2" toggle-dark>Web Dev, Blogger, Advocate</h2>
               <p class="intro-par" aria-labelledby="Natan's tagline" aria-role="paragraph" toggle-dark>
-                As a Frontend Developer, I put my heart and soul into crafting delightful and intuitive user interfaces. I strive to make each website I build not only a feast for the eyes, but also fully responsive, inclusive, and lightning-fast. My philosophy is that a website should not only be pretty, but also offer a seamless and enjoyable journey for the user. Let's join forces and raise the bar for web design and accessibility.
+                As a Frontend Developer, I strive to make each website I build not only a feast for the eyes, but also fully responsive, inclusive, and lightning-fast. My philosophy is that a website should not only be pretty, but also offer a seamless and enjoyable journey for the user. Let's join forces and raise the bar for web design and accessibility.
               </p>
           </article>
           
@@ -118,12 +117,12 @@
                   </div>
 
                   <figcaption class="card-profile-details">
-                    <cite>Web Design & Development</cite>
+                    <cite toggle-dark>Web Design & Development</cite>
                   </figcaption>
                 </figure>
 
                 <footer>
-                  <blockquote>Creating unique, visually stunning, and reliable websites. Using the best technologies, from Wordpress to custom solutions, to deliver a website tailored to your specific needs. With hosting on Amazon Web Services or other alternatives to ensure your website is always accessible and scalable.</blockquote>
+                  <blockquote toggle-dark>Creating unique, visually stunning, and reliable websites. Using the best technologies, from Wordpress to custom solutions, to deliver a website tailored to your specific needs. With hosting on Amazon Web Services or other alternatives to ensure your website is always accessible and scalable.</blockquote>
                 </footer>
               </li>
 
@@ -135,12 +134,12 @@
                   </div>
 
                   <figcaption class="card-profile-details">
-                    <cite>UI (User Interfaces) / UX (User Experience)</cite>
+                    <cite toggle-dark>UI (User Interfaces) / UX (User Experience)</cite>
                   </figcaption>
                 </figure>
 
                 <footer>
-                  <blockquote>Creating user-centered software that not only looks great but also solves problems effectively. Using UX and UI design techniques to ensure the software is intuitive, functional, and aligns with your overall marketing strategy. Paying attention to the smallest details to ensure the software fits seamlessly with your business.</blockquote>
+                  <blockquote toggle-dark>Creating user-centered software that not only looks great but also solves problems effectively. Using UX and UI design techniques to ensure the software is intuitive, functional, and aligns with your overall marketing strategy. Paying attention to the smallest details to ensure the software fits seamlessly with your business.</blockquote>
                 </footer>
               </li>
 
@@ -152,12 +151,12 @@
                   </div>
 
                   <figcaption class="card-profile-details">
-                    <cite>SEO (Search Engine Optimization)</cite>
+                    <cite toggle-dark>SEO (Search Engine Optimization)</cite>
                   </figcaption>
                 </figure>
 
                 <footer>
-                  <blockquote>With my SEO expertise, I'll boost your brand's visibility and attract more customers to your website. From keyword research to on-page optimization, I'll make sure your site is fully optimized for both organic traffic and conversions, so you can dominate Google's search results and outshine your competition. Let's work together to make sure your brand is seen by the right people at the right time.</blockquote>
+                  <blockquote toggle-dark>With my SEO expertise, I'll boost your brand's visibility and attract more customers to your website. From keyword research to on-page optimization, I'll make sure your site is fully optimized for both organic traffic and conversions, so you can dominate Google's search results and outshine your competition. Let's work together to make sure your brand is seen by the right people at the right time.</blockquote>
                 </footer>
               </li>
             </ul>
@@ -168,7 +167,7 @@
             <h2 class="card-title highlight-mid" role="heading" aria-level="3" toggle-dark>Testimonials</h2>
             <ul class="card-grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
               <li class="card-info flow">
-                <blockquote cite="Carlos Rymer">He's had experience with each of the foundational technologies of the MERN stack (MongoDB, Express, React, and Node.js)... Based on the time I’ve known Natan, I am confident that he will continue to overperform and leave significant positive impact in the organizations that are fortunate to have him.</blockquote>
+                <blockquote cite="Carlos Rymer" toggle-dark>He's had experience with each of the foundational technologies of the MERN stack (MongoDB, Express, React, and Node.js)... Based on the time I’ve known Natan, I am confident that he will continue to overperform and leave significant positive impact in the organizations that are fortunate to have him.</blockquote>
 
                 <footer>
                   <figure class="card-info-sidebar">
@@ -177,15 +176,15 @@
                     </div>
 
                     <figcaption class="testimonial-profile-details">
-                      <cite>Carlos Rymer</cite>
-                      <span>Software Development Manager @LinkedIn</span>
+                      <cite toggle-dark><b>Carlos Rymer</b></cite>
+                      <span toggle-dark>Software Development Manager @LinkedIn</span>
                     </figcaption>
                   </figure>
                 </footer>
               </li>
 
               <li class="card-info flow">
-                <blockquote cite="Daniel Gorman">Natan has solid skills in programming and system design. He is also a great collaborator and understands how to support his teammates and customers... Natan understands the value of diving deeper and investigating complex problems prior to coming to a conclusion.</blockquote>
+                <blockquote cite="Daniel Gorman" toggle-dark>Natan has solid skills in programming and system design. He is also a great collaborator and understands how to support his teammates and customers... Natan understands the value of diving deeper and investigating complex problems prior to coming to a conclusion.</blockquote>
 
                 <footer>
                   <figure class="card-info-sidebar">
@@ -194,15 +193,15 @@
                     </div>
 
                     <figcaption class="testimonial-profile-details">
-                      <cite>Daniel Gorman</cite>
-                      <span>Software Development Manager @Amazon</span>
+                      <cite toggle-dark><b>Daniel Gorman</b></cite>
+                      <span toggle-dark>Software Development Manager @Amazon</span>
                     </figcaption>
                   </figure>
                 </footer>
               </li>
 
               <li class="card-info flow">
-                <blockquote cite="Tahreem Shah">[Natan's] job entails a great deal of coordination and testing to ensure that the work is completed in accordance with the project's requirements and scope. Natan, whose role is in UX design and Front End web development, does a fantastic job directing this effort.</blockquote>
+                <blockquote cite="Tahreem Shah" toggle-dark>[Natan's] job entails a great deal of coordination and testing to ensure that the work is completed in accordance with the project's requirements and scope. Natan, whose role is in UX design and Front End web development, does a fantastic job directing this effort.</blockquote>
 
                 <footer>
                   <figure class="card-info-sidebar">
@@ -211,8 +210,8 @@
                     </div>
 
                     <figcaption class="testimonial-profile-details">
-                      <cite>Tahreem Shah</cite>
-                      <span>Architect | Yunus&Youth Fellow | Assistant Vice President</span>
+                      <cite toggle-dark><b>Tahreem Shah</b></cite>
+                      <span toggle-dark>Architect | Yunus&Youth Fellow | Assistant Vice President</span>
                     </figcaption>
                   </figure>
                 </footer>
@@ -223,10 +222,10 @@
   
           <!-- PROJECT SECTION -->
           <article class="card-box" toggle-dark>
-            <h2 class="card-title" role="heading" aria-level="3">Projects</h2>
+            <h2 class="card-title" role="heading" aria-level="3" toggle-dark>Projects</h2>
             <ul class="card-grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
               <li class="card-info flow">
-                <blockquote cite="https://github.com/NatC02/den-blog">A blink once and you miss it thought center to collaborate and share Do-It-Yourself tricks and knowledge. Utilizing Nextjs dynamic routes with slugs and deployed with content and SEO friendliness in mind. Structured page-specific server-side rendering, static site generation, and client-side rendering with react hooks to conditionally handle app logic.</blockquote>
+                <blockquote cite="https://github.com/NatC02/den-blog" toggle-dark>A blink once and you miss it thought center to collaborate and share Do-It-Yourself tricks and knowledge. Utilizing Nextjs dynamic routes with slugs and deployed with content and SEO friendliness in mind. Structured page-specific server-side rendering, static site generation, and client-side rendering with react hooks to conditionally handle app logic.</blockquote>
 
                 <footer>
                   <figure class="card-info-sidebar">
@@ -235,19 +234,19 @@
                     </div>
 
                     <figcaption class="project-profile-details">
-                      <cite>Den</cite>
-                      <span>DIY Knowledge Base</span>
+                      <cite toggle-dark>Den</cite>
+                      <span toggle-dark>DIY Knowledge Base</span>
                     </figcaption>                        
                   </figure>   
                   
                   <div class="cluster-buttons">
-                    <a href="https://den-blog-prod.vercel.app/" class="push-button" role="link">Learn More</a>
+                    <a href="https://den-blog-prod.vercel.app/" class="push-button" role="link" toggle-dark>Learn More</a>
                   </div>
                 </footer>
               </li>
 
               <li class="card-info flow">
-                <blockquote cite="https://github.com/NatC02/dime_dozen_bank_concept">Dime Dozen is a staged design for a financial technology company. The site is built with React and Tailwind. The design is inspired to feel neutral and muted with pops of bright colour, in order to communicate a feeling of trust and professionalism. The layout is clean and simple, with easy to navigate sections. The goal of the design is to communicate a feeling of safety and security, while also maintaining a modern and sleek aesthetic.</blockquote>
+                <blockquote cite="https://github.com/NatC02/dime_dozen_bank_concept" toggle-dark>Dime Dozen is a staged design for a financial technology company. The site is built with React and Tailwind. The design is inspired to feel neutral and muted with pops of bright colour, in order to communicate a feeling of trust and professionalism. The layout is clean and simple, with easy to navigate sections. The goal of the design is to communicate a feeling of safety and security, while also maintaining a modern and sleek aesthetic.</blockquote>
 
                 <footer>
                   <figure class="card-info-sidebar">
@@ -256,19 +255,19 @@
                     </div>
 
                     <figcaption class="project-profile-details">
-                      <cite>Dime Dozen</cite>
-                      <span>Experimental Design</span>
+                      <cite toggle-dark>Dime Dozen</cite>
+                      <span toggle-dark>Experimental Design</span>
                     </figcaption>
                   </figure>
 
                   <div class="cluster-buttons">
-                    <a href="https://dime-dozen-f7107.web.app/" class="push-button" role="link">Learn More</a>
+                    <a href="https://dime-dozen-f7107.web.app/" class="push-button" role="link" toggle-dark>Learn More</a>
                   </div>
                 </footer>
               </li>
 
               <li class="card-info flow">
-                <blockquote cite="https://greplynk.vercel.app/">Greplynk is a premier residential housing platform built with mobile-first integrated React design. It's implemented with realtime data, allowing users to post and edit advertised listings, plus more!</blockquote>
+                <blockquote cite="https://greplynk.vercel.app/" toggle-dark>Greplynk is a premier residential housing platform built with mobile-first integrated React design. It's implemented with realtime data, allowing users to post and edit advertised listings, plus more!</blockquote>
 
                 <footer>
                   <figure class="card-info-sidebar">
@@ -277,19 +276,19 @@
                     </div>
 
                     <figcaption class="project-profile-details">
-                      <cite>GrepLynk</cite>
-                      <span>Conglomerate Residential Living</span>
+                      <cite toggle-dark>GrepLynk</cite>
+                      <span toggle-dark>Conglomerate Residential Living</span>
                     </figcaption>
                   </figure>
 
                   <div class="cluster-buttons">
-                    <a href="https://greplynk.vercel.app/" class="push-button" role="link">Learn More</a>
+                    <a href="https://greplynk.vercel.app/" class="push-button" role="link" toggle-dark>Learn More</a>
                   </div>
                 </footer>
               </li>
 
               <li class="card-info flow">
-                <blockquote cite="https://bhoroshabangladesh.mystrikingly.com/">An initiative to help +1000 underrepresented women in Dhaka, Bangladesh attain jobs in the informal and formal sectors. Mission is aligned with the United Nations' 17 Sustainable Development Goals (SDGs). 1: No Poverty, 8: Decent Work and Economic Growth, and 10: Reduced Inequalities.</blockquote>
+                <blockquote cite="https://bhoroshabangladesh.mystrikingly.com/" toggle-dark>An initiative to help +1000 underrepresented women in Dhaka, Bangladesh attain jobs in the informal and formal sectors. Mission is aligned with the United Nations' 17 Sustainable Development Goals (SDGs). 1: No Poverty, 8: Decent Work and Economic Growth, and 10: Reduced Inequalities.</blockquote>
 
                 <footer>
                   <figure class="card-info-sidebar">
@@ -298,19 +297,19 @@
                     </div>
 
                     <figcaption class="project-profile-details">
-                      <cite>Bhorosha</cite>
-                      <span>Transparent and automated job sourcing platform</span>
+                      <cite toggle-dark>Bhorosha</cite>
+                      <span toggle-dark>Transparent and automated job sourcing platform</span>
                     </figcaption>
                   </figure>
 
                   <div class="cluster-buttons">
-                    <a href="https://bhoroshabangladesh.mystrikingly.com/" class="push-button" role="link">Learn More</a>
+                    <a href="https://bhoroshabangladesh.mystrikingly.com/" class="push-button" role="link" toggle-dark>Learn More</a>
                   </div>
                 </footer>
               </li>
 
               <li class="card-info flow">
-                <blockquote cite="https://natc02.github.io/sephardicCenter/home">Sephardic Center is a website for the synagogue of Forrest Hills in New Jersey built with accesibility in mind. The client wanted a clean and smooth design which I was able to provide at the end of the testimonial.</blockquote>
+                <blockquote cite="https://natc02.github.io/sephardicCenter/home" toggle-dark>Sephardic Center is a website for the synagogue of Forrest Hills in New Jersey built with accesibility in mind. The client wanted a clean and smooth design which I was able to provide at the end of the testimonial.</blockquote>
 
                 <footer>
                   <figure class="card-info-sidebar">
@@ -319,20 +318,20 @@
                     </div>
 
                     <figcaption class="project-profile-details">
-                      <cite>Sephardic Center</cite>
-                      <span>A resource hub for the Sephardic Center Community</span>
+                      <cite toggle-dark>Sephardic Center</cite>
+                      <span toggle-dark>A resource hub for the Sephardic Center Community</span>
                     </figcaption>
                   </figure>
 
                   <div class="cluster-buttons">
-                    <a href="https://www.linkedin.com/in/natanceballos/" class="push-button" role="link">Learn More</a>
-                    <a href="https://natc02.github.io/sephardicCenter/home" class="push-button" role="link">Preview</a>
+                    <a href="https://www.linkedin.com/in/natanceballos/" class="push-button" role="link" toggle-dark>Learn More</a>
+                    <a href="https://natc02.github.io/sephardicCenter/home" class="push-button" role="link" toggle-dark>Preview</a>
                   </div>
                 </footer>
               </li>
 
               <li class="card-info flow">
-                <blockquote cite="https://natc02.github.io/sephardicCenter/home">Real World Connections (RWC) is a unique program that offers talented middle and high school students the opportunity to be involved in a fun-filled and hands-on educational experience. I taught middle school students the fundamentals of HTML5 and CSS3 so they could make a website on the importance of health during the pandemic.</blockquote>
+                <blockquote cite="https://natc02.github.io/sephardicCenter/home" toggle-dark>Real World Connections (RWC) is a unique program that offers talented middle and high school students the opportunity to be involved in a fun-filled and hands-on educational experience. I taught middle school students the fundamentals of HTML5 and CSS3 so they could make a website on the importance of health during the pandemic.</blockquote>
 
                 <footer>
                   <figure class="card-info-sidebar">
@@ -343,14 +342,14 @@
                     </div>
 
                     <figcaption class="project-profile-details">
-                      <cite>New Jersey Institute of Technology</cite>
-                      <span>Web Development Assistant Teacher</span>
+                      <cite toggle-dark>New Jersey Institute of Technology</cite>
+                      <span toggle-dark>Web Development Assistant Teacher</span>
                     </figcaption>
                   </figure>
 
                   <div class="cluster-buttons">
-                    <a href="https://rwcconnections.com/" class="push-button" role="link">Learn More</a>
-                    <a href="https://natc02.github.io/sephardicCenter/home" class="push-button" role="link">Preview</a>
+                    <a href="https://rwcconnections.com/" class="push-button" role="link" toggle-dark>Learn More</a>
+                    <a href="https://natc02.github.io/sephardicCenter/home" class="push-button" role="link" toggle-dark>Preview</a>
                   </div>
                 </footer>
               </li>
@@ -359,14 +358,13 @@
               
           <!-- Copyright Symbol -->
           <footer>
-            <span class="with-icon">
-              <svg class="img-c" imgLight width='20px' height='20px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>copyright_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Business' transform='translate(-528.000000, -96.000000)' fill-rule='nonzero'><g id='copyright_line' transform='translate(528.000000, 96.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M12,2 C17.5228,2 22,6.47715 22,12 C22,17.5228 17.5228,22 12,22 C6.47715,22 2,17.5228 2,12 C2,6.47715 6.47715,2 12,2 Z M12,4 C7.58172,4 4,7.58172 4,12 C4,16.4183 7.58172,20 12,20 C16.4183,20 20,16.4183 20,12 C20,7.58172 16.4183,4 12,4 Z M12,7 C13.4935,7 14.835,7.65607 15.7497,8.69244 C16.1152,9.10651 16.0758,9.73845 15.6617,10.1039 C15.2477,10.4694 14.6157,10.43 14.2503,10.0159 C13.6991,9.39144 12.8959,9 12,9 C10.3431,9 9,10.3431 9,12 C9,13.6569 10.3431,15 12,15 C12.8959,15 13.6991,14.6086 14.2503,13.9841 C14.6157,13.57 15.2477,13.5306 15.6617,13.8961 C16.0758,14.2616 16.1152,14.8935 15.7497,15.3076 C14.835,16.3439 13.4935,17 12,17 C9.23858,17 7,14.7614 7,12 C7,9.23858 9.23858,7 12,7 Z' id='形状' fill='#09244BFF'></path></g></g></g></svg>
+            <span class="with-icon" toggle-dark>
+              <svg class="img-c icon" imgLight width='20px' height='20px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>copyright_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Business' transform='translate(-528.000000, -96.000000)' fill-rule='nonzero'><g id='copyright_line' transform='translate(528.000000, 96.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M12,2 C17.5228,2 22,6.47715 22,12 C22,17.5228 17.5228,22 12,22 C6.47715,22 2,17.5228 2,12 C2,6.47715 6.47715,2 12,2 Z M12,4 C7.58172,4 4,7.58172 4,12 C4,16.4183 7.58172,20 12,20 C16.4183,20 20,16.4183 20,12 C20,7.58172 16.4183,4 12,4 Z M12,7 C13.4935,7 14.835,7.65607 15.7497,8.69244 C16.1152,9.10651 16.0758,9.73845 15.6617,10.1039 C15.2477,10.4694 14.6157,10.43 14.2503,10.0159 C13.6991,9.39144 12.8959,9 12,9 C10.3431,9 9,10.3431 9,12 C9,13.6569 10.3431,15 12,15 C12.8959,15 13.6991,14.6086 14.2503,13.9841 C14.6157,13.57 15.2477,13.5306 15.6617,13.8961 C16.0758,14.2616 16.1152,14.8935 15.7497,15.3076 C14.835,16.3439 13.4935,17 12,17 C9.23858,17 7,14.7614 7,12 C7,9.23858 9.23858,7 12,7 Z' id='形状' fill='#81846F'></path></g></g></g></svg>
               
-              <svg class="img-c" imgDark width='20px' height='20px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>copyright_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Business' transform='translate(-528.000000, -96.000000)' fill-rule='nonzero'><g id='copyright_line' transform='translate(528.000000, 96.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M12,2 C17.5228,2 22,6.47715 22,12 C22,17.5228 17.5228,22 12,22 C6.47715,22 2,17.5228 2,12 C2,6.47715 6.47715,2 12,2 Z M12,4 C7.58172,4 4,7.58172 4,12 C4,16.4183 7.58172,20 12,20 C16.4183,20 20,16.4183 20,12 C20,7.58172 16.4183,4 12,4 Z M12,7 C13.4935,7 14.835,7.65607 15.7497,8.69244 C16.1152,9.10651 16.0758,9.73845 15.6617,10.1039 C15.2477,10.4694 14.6157,10.43 14.2503,10.0159 C13.6991,9.39144 12.8959,9 12,9 C10.3431,9 9,10.3431 9,12 C9,13.6569 10.3431,15 12,15 C12.8959,15 13.6991,14.6086 14.2503,13.9841 C14.6157,13.57 15.2477,13.5306 15.6617,13.8961 C16.0758,14.2616 16.1152,14.8935 15.7497,15.3076 C14.835,16.3439 13.4935,17 12,17 C9.23858,17 7,14.7614 7,12 C7,9.23858 9.23858,7 12,7 Z' id='形状' fill='#FFFFFFFF'></path></g></g></g></svg>
+              <svg class="img-c icon" imgDark width='20px' height='20px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>copyright_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Business' transform='translate(-528.000000, -96.000000)' fill-rule='nonzero'><g id='copyright_line' transform='translate(528.000000, 96.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M12,2 C17.5228,2 22,6.47715 22,12 C22,17.5228 17.5228,22 12,22 C6.47715,22 2,17.5228 2,12 C2,6.47715 6.47715,2 12,2 Z M12,4 C7.58172,4 4,7.58172 4,12 C4,16.4183 7.58172,20 12,20 C16.4183,20 20,16.4183 20,12 C20,7.58172 16.4183,4 12,4 Z M12,7 C13.4935,7 14.835,7.65607 15.7497,8.69244 C16.1152,9.10651 16.0758,9.73845 15.6617,10.1039 C15.2477,10.4694 14.6157,10.43 14.2503,10.0159 C13.6991,9.39144 12.8959,9 12,9 C10.3431,9 9,10.3431 9,12 C9,13.6569 10.3431,15 12,15 C12.8959,15 13.6991,14.6086 14.2503,13.9841 C14.6157,13.57 15.2477,13.5306 15.6617,13.8961 C16.0758,14.2616 16.1152,14.8935 15.7497,15.3076 C14.835,16.3439 13.4935,17 12,17 C9.23858,17 7,14.7614 7,12 C7,9.23858 9.23858,7 12,7 Z' id='形状' fill='#FFFFFFFF'></path></g></g></g></svg>
                 2023 Natan Ceballos
-              </span>
-            </br>
-            <i>Don't forget to update your copyright date on New Year's Day.</i>
+              </span> </br>
+            <i toggle-dark>Don't forget to update your copyright date on New Year's Day.</i>
           </footer>
         </main>
 
@@ -412,8 +410,10 @@
 
             <h3 class="about-title highlight-end center" role="heading" aria-level="3" toggle-dark>New Jersey, United States</h3>
 
-            <p class="about-me-par">
+            <p class="about-me-par" toggle-dark>
               As a lifelong learner, I am constantly on the lookout for new ways to level up the web. In fact, I am so passionate about it that you can keep up with my thoughts and updates on my community blog (coming soon). I am all in when it comes to the web, and have sharpened my skills in technologies such as Wordpress, React, Gatsby, Node, and AWS as a Frontend developer to deliver an exceptional web experience. 
+
+              <!-- The first time I knew I wanted to go into tech was when I broke my DS in two thinking I could put it back together.  -->
             </p>
               
             <h3 class="about-title highlight-end center" role="heading" aria-level="3" toggle-dark>
@@ -421,7 +421,7 @@
             </h3>
 
             <p class="about-me-par" toggle-dark>
-              When I'm not coding or debugging, you can find me diving into a good book, writing on my community blog (coming soon), immersing myself in a game of Dungeons & Dragons (Pathfinder), journaling my thoughts, watching thought-provoking documentaries, going out for walks, indulging in YouTube videogame animation, and studying the art of videography and cinematography. My interests may be diverse, but they all feed my passion for creating and bringing new ideas to life, just as I do in my work as a Frontend Developer. Fun fact: My favorite video game is Red Dead Redemption 2!
+              When I'm not coding or debugging, you can find me diving into a good book, writing on my community blog (coming soon), immersing myself in a game of Dungeons & Dragons or Pathfinder, journaling my thoughts, watching thought-provoking documentaries, going out for walks, indulging in YouTube videogame animation, and studying the art of videography and cinematography. My interests may be diverse, but they all feed my passion for creating and bringing new ideas to life, just as I do in my work as a Frontend Developer. Fun fact: My favorite video game is Red Dead Redemption 2!
             </p>
 
             <ul class="hobbies-grid" role="list" data-rows="masonry" data-layout="50-50">
