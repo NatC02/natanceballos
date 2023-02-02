@@ -1,0 +1,108 @@
+
+
+.form-container {
+	margin-block: var(--size-step-3);
+  color: #81846F;
+}
+
+form {
+	--flow-space: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem)
+}
+
+form label {
+	text-transform: uppercase;
+	padding: 0 0 .5rem clamp(.88rem,.83rem + .24vw,1rem);
+	font-weight: 700;
+}
+
+form label:after {
+	content: "\a";
+	white-space: pre
+}
+
+form input,form p[id],form textarea {
+	width: 100%;
+	max-width: 30rem
+}
+
+form p[id] {
+	font-size: clamp(.88rem,.83rem + .24vw,1rem);
+	padding: .5rem 0 0 1rem;
+	font-family: atkinson_hyperlegible,Arial,sans-serif
+}
+
+form input,textarea {
+	border: 2px solid #81846F;
+	border-radius: 1rem;
+	padding: .85rem 1rem;
+	font-size: clamp(.88rem,.83rem + .24vw,1rem);
+	line-height: 1;
+	font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace
+}
+
+
+form :focus {
+	outline: #2C701F solid 1px;
+	outline-offset: .25rem
+}
+
+main:focus {
+	outline: 0
+}
+
+/* ::selection {
+	background: #1c2334;
+	color: #f3eee4
+}
+
+::-webkit-scrollbar {
+	height: .7rem
+}
+
+::-webkit-scrollbar-track {
+	background-color: #efefef
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #2C701F
+}
+
+* {
+	scrollbar-color: #2C701F #c2c5cc
+} */
+
+.wrapper {
+    width: 90vw;
+    width: clamp(16rem,93vw,75rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(1.09rem,1rem + 0.47vw,1.33rem);
+    padding-right: clamp(1.09rem,1rem + 0.47vw,1.33rem);
+    position: relative;
+}
+
+form {
+    --flow-space: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+}
+
+.flow>*+*{
+	margin-top: var(--flow-space,clamp(1.09rem,1rem + .47vw,1.33rem))
+}
+
+.button {
+    display: inline-block;
+    padding: var(--size-step-0) var(--size-step-1);
+    border-radius: clamp(1.37rem,1.21rem + 0.8vw,1.78rem);
+    /* border: 2px solid #81846F; */
+    background: transparent;
+    color: #81846F;
+    cursor: pointer;
+    font: inherit;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: clamp(1.09rem,1rem + .47vw,1.33rem);
+    line-height: 1;
+    letter-spacing: .05ch;
+    text-decoration: none;
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 15%);
+}
