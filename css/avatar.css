@@ -1,0 +1,118 @@
+
+
+/* .img-space {
+  padding-inline: var(--size-step-4);
+  padding-block-end: var(--size-step-2);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* if the img does not have the class "active-img" and it is with the custom attribute "imgLight" or "imgDark" then "display:none" */
+
+.img-c:not(.active-img)[imgLight] {
+  display: none;
+}
+
+.img-c.active-img[imgLight] {
+  display: block;
+}
+
+.img-c:not(.active-img)[imgDark] {
+  display: none;
+}
+
+.img-c.active-img[imgDark] {
+  display: block;
+}
+
+
+
+
+
+/* if img.active-img and imgLight is the first child hide until hovered */
+
+
+/* #image-container > div[imgLight]:not(.active.img) {
+  display: none;
+} */
+
+picture[imgLight]:not(.active-img) {
+  display: none;
+}
+
+picture[imgLight].active-img {
+  display: block;
+}
+
+picture[imgDark]:not(.active-img) {
+  display: none;
+}
+
+picture[imgDark].active-img {
+  display: block;
+}
+
+
+
+
+
+
+/* 
+#image-container > div[imgDark]:not(.active.img) {
+  display: none;
+} */
+
+#image-container > picture[imgDark] .active.img {
+  display: block;
+}
+
+
+
+
+
+
+
+/* if the .img does not have the custom attribute of [imgLight] on hover does not have the class "active-img" then "display:none" */
+
+/* .imgLight:not(.active-img):not(.hoverable), .imgDark:not(.active-img):not(.hoverable) {
+    pointer-events: none;
+} */
+
