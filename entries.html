@@ -33,7 +33,11 @@
         </script>
 
         <link type="text/css" rel="stylesheet" href="./css/reset.css">
-        <link type="text/css" rel="stylesheet" href="./css/entries/sade-code.css">
+        <!-- <link type="text/css" rel="stylesheet" href="./css/entries/sade-code.css"> -->
+        <link type="text/css" rel="stylesheet" href="./css/entries/main.css">
+
+
+
         <link type="text/css" rel="stylesheet" href="./css/entries/custom.css">
         <link type="text/css" rel="stylesheet" href="./css/entries/blog-card.css">
 
@@ -53,7 +57,7 @@
         <link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i" rel="stylesheet" />
       </head>
      
-      <body toggle-dark>
+      <body>
         <!-- load the correct img based on dark-mode setting -->
         <script>
           window.onload = function() {
@@ -73,30 +77,155 @@
       <ul role='list' class="cluster-nav-start"> 
         <li role="listitem">
           <a href="/index.html" role="link" tabindex="-1">
-            <button class="link" aria-label="Home" toggle-dark>Home</button>  
+            <button class="link" aria-label="Home">Home</button>  
           </a>
         </li>
         <li role="listitem">
           <a href="/entries.html" aria-current="page" role="link" tabindex="-1">
-            <button class="link" aria-label="Portfolio" toggle-dark>Entries</button>
+            <button class="link" aria-label="Portfolio">Entries</button>
           </a>
         </li>
         <li role="listitem">
-          <a href="/photo-album.html" role="link" tabindex="-1" toggle-dark>
+          <a href="/personal.html" role="link" tabindex="-1">
+            <button class="link" aria-label="Contact">Personal</button>
+          </a>
+        </li>
+        <li role="listitem">
+          <a href="/photo-album.html" role="link" tabindex="-1">
             <button class="link" aria-label="Contact">Photo Album</button>
           </a>
         </li>
         <li role="listitem">
             <a href="/contact.html" role="link" tabindex="-1">
-              <button class="link" aria-label="Contact" toggle-dark>Contact</button>
+              <button class="link" aria-label="Contact">Contact</button>
             </a>
         </li>
       </ul>
   </nav>
 </header>
-<div class="main">
 
-  <div class="container">
+
+<main class="page-sidebar">
+
+  <div>
+
+    <h2 class="h2">Latest Journal Entries</h2>
+
+    <ul class="card-grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+      <li class="blog-card">
+        <div class="frame">
+          <img src="./img/coming-soon.png" alt="Building microservices with Dropwizard, MongoDB &amp; Docker">
+        </div>
+
+        <div class="blog-card-stack">
+
+        <p class="blog-topic text-tiny">Societal Trends</p>
+
+        <h3>
+          <a href="#" class="h3">
+            Why have I started my online Journal?
+          </a>
+        </h3>
+
+        <p class="blog-text">
+          Have you ever wondered why someone would start an online journal? Well, look no further! In this post, I'll be sharing the personal journey that led me to start my own online journal, and the exciting experiences and insights that have come along with it.
+        </p>
+
+        <div class="wrapper-flex">
+
+        <div class="wrapper">
+          <p class="text-sm">
+            <time datetime="2022-01-17">Feb 7, 2023</time>
+            <span class="separator"></span>
+            <ion-icon name="time-outline" role="img" class="md hydrated" aria-label="time outline"></ion-icon>
+            <time datetime="PT3M">3 min</time>
+          </p>
+        </div>
+      </li>
+
+
+      <li class="blog-card">
+        <div class="frame">
+          <img src="./img/coming-soon.png" alt="Building microservices with Dropwizard, MongoDB &amp; Docker">
+        </div>
+
+        <div class="blog-card-stack">
+
+        <p class="blog-topic text-tiny">Societal Trends</p>
+
+        <h3>
+          <a href="#" class="h3">
+            Why have I started my online Journal?
+          </a>
+        </h3>
+
+        <p class="blog-text">
+          Have you ever wondered why someone would start an online journal? Well, look no further! In this post, I'll be sharing the personal journey that led me to start my own online journal, and the exciting experiences and insights that have come along with it.
+        </p>
+
+        <div class="wrapper-flex">
+
+        <div class="wrapper">
+          <p class="text-sm">
+            <time datetime="2022-01-17">Feb 7, 2023</time>
+            <span class="separator"></span>
+            <ion-icon name="time-outline" role="img" class="md hydrated" aria-label="time outline"></ion-icon>
+            <time datetime="PT3M">3 min</time>
+          </p>
+        </div>
+      </li>
+    </ul>
+    
+    <!-- <button class="btn load-more">Load More</button> -->
+
+  </div>
+
+
+  <div class="aside">
+
+    <div class="contact">
+
+      <h2 class="h2">Let's Talk</h2>
+
+      <div class="wrapper">
+
+        <p>
+          Do you want to learn more about how I can help your company overcome problems? Let us have a
+          conversation.
+        </p>
+
+        <div class="cluster-buttons">
+          <a href="https://bhoroshabangladesh.mystrikingly.com/" class="push-button" role="link" toggle-dark>Learn More</a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="newsletter">
+
+      <h2 class="h2">Newsletter</h2>
+
+      <div class="wrapper">
+
+        <p>
+          Stay connected and never miss a beat with my newsletter.
+        </p>
+
+      <iframe src="https://natanceballos.substack.com/embed" width="280" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+
 
     <!-- Life
     Societal Trends
@@ -113,56 +242,11 @@
       - BLOG SECTION
     -->
 
-    <div class="blog">
-
-      <h2 class="h2">Latest Journal Entries</h2>
-
-      <div class="blog-card-group">
-
-        <div class="blog-card">
-
-          <div class="frame">
-            <img src="./img/coming-soon.png" alt="Building microservices with Dropwizard, MongoDB &amp; Docker">
-          </div>
-
-          <div class="blog-content-wrapper">
-
-            <p class="blog-topic text-tiny">Societal Trends</p>
-
-            <h3>
-              <a href="#" class="h3">
-                Why have I started my online Journal?
-              </a>
-            </h3>
-
-            <p class="blog-text">
-              Have you ever wondered why someone would start an online journal? Well, look no further! In this post, I'll be sharing the personal journey that led me to start my own online journal, and the exciting experiences and insights that have come along with it.
-            </p>
-
-            <div class="wrapper-flex">
-
-              <div class="wrapper">
-                <p class="text-sm">
-                  <time datetime="2022-01-17">Feb 7, 2023</time>
-                  <span class="separator"></span>
-                  <ion-icon name="time-outline" role="img" class="md hydrated" aria-label="time outline"></ion-icon>
-                  <time datetime="PT3M">3 min</time>
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- <button class="btn load-more">Load More</button> -->
-
-    </div>
 
 
+
+
+    
 
 
 
@@ -170,71 +254,7 @@
       - ASIDE
     -->
 
-    <div class="aside">
-
-      <div class="contact">
-
-        <h2 class="h2">Let's Talk</h2>
-
-        <div class="wrapper">
-
-          <p>
-            Do you want to learn more about how I can help your company overcome problems? Let us have a
-            conversation.
-          </p>
-
-          <ul class="social-link">
-
-            <li>
-              <a href="#" class="icon-box discord">
-                <ion-icon name="logo-discord" role="img" class="md hydrated" aria-label="logo discord"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="icon-box twitter">
-                <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="icon-box facebook">
-                <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-      <div class="newsletter">
-
-        <h2 class="h2">Newsletter</h2>
-
-        <div class="wrapper">
-
-          <p>
-            Subscribe to our newsletter to be among the first to keep up with the latest updates.
-          </p>
-
-          <form action="#">
-            <input type="email" name="email" placeholder="Email Address" required="">
-
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
+  
 
 
 
@@ -242,27 +262,33 @@
     - #FOOTER
   -->
 
-  <footer>
+        <footer>
+          <ul role='list' class="footer-links-nav"> 
+            <li role="listitem">
+              <a href="https://www.linkedin.com/in/natanceballos" role="link">
+                <?xml version='1.0' encoding='UTF-8'?><svg width='32px' height='32px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>linkedin_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Brand' transform='translate(-336.000000, -0.000000)' fill-rule='nonzero'><g id='linkedin_line' transform='translate(336.000000, 0.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M18,3 C19.6569,3 21,4.34315 21,6 L21,18 C21,19.6569 19.6569,21 18,21 L6,21 C4.34315,21 3,19.6569 3,18 L3,6 C3,4.34315 4.34315,3 6,3 L18,3 Z M18,5 L6,5 C5.44772,5 5,5.44772 5,6 L5,18 C5,18.5523 5.44772,19 6,19 L18,19 C18.5523,19 19,18.5523 19,18 L19,6 C19,5.44772 18.5523,5 18,5 Z M8,10 C8.51283143,10 8.93550653,10.386027 8.9932722,10.8833761 L9,11 L9,16 C9,16.5523 8.55228,17 8,17 C7.48716857,17 7.06449347,16.613973 7.0067278,16.1166239 L7,16 L7,11 C7,10.4477 7.44772,10 8,10 Z M11,9 C11.4913,9 11.8998,9.35427 11.9841,9.82128 C12.1863,9.70435 12.395,9.59892 12.6067,9.50837 C13.2739,9.22295 14.2732,9.06594 15.1749,9.34949 C15.6476,9.4981 16.1232,9.77907 16.4758,10.2556 C16.7904667,10.6810222 16.9599086,11.1984148 16.9936776,11.7792631 L17,12 L17,16 C17,16.5522 16.5523,17 16,17 C15.48715,17 15.0644908,16.6138867 15.0067275,16.1166055 L15,16 L15,12 C15,11.6707 14.9201,11.5157 14.868,11.4451 C14.8143,11.3726 14.7274,11.3053 14.5751,11.2574 C14.2268,11.1479 13.7261,11.2048 13.3933,11.3472 C12.892275,11.5614875 12.4347375,11.8971266 12.1239225,12.2083422 L12,12.3398 L12,16 C12,16.5523 11.5523,17 11,17 C10.48715,17 10.0644908,16.613973 10.0067275,16.1166239 L10,16 L10,10 C10,9.44772 10.4477,9 11,9 Z M8,7 C8.55228,7 9,7.44772 9,8 C9,8.55228 8.55228,9 8,9 C7.44772,9 7,8.55228 7,8 C7,7.44772 7.44772,7 8,7 Z' id='形状' fill='#81846FFF'></path></g></g></g></svg>
+              </a>
+            </li>
 
-    <div class="footer-links">
-      <ul class="footer-links">
-        <li class="footer-links"><a href="https://www.linkedin.com/in/natanceballos">LinkedIn</a></li>
-        <li class="footer-links"><a href="https://github.com/NatC02">Github</a></li>
-        <li class="footer-links"><a href="mailto:nat@natanceballos.com">Email</a></li>
-        <li class="footer-links">
-          <p>👋</p>
-        </li>
-      </ul>
-    </div>
-    <p class="copyright">
-      &copy; Copyright 2022 <a href="#">codewithsadee</a>
-    </p>
+            <li role="listitem">
+              <a href="https://github.com/NatC02" role="link">
+                <?xml version='1.0' encoding='UTF-8'?><svg width='32px' height='32px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>github_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Logo' transform='translate(-144.000000, -96.000000)' fill-rule='nonzero'><g id='github_line' transform='translate(144.000000, 96.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M6.31507,6.17592 C6.06528,5.53804 6.07509,4.80911 6.18645,4.14164 C6.94443,4.3743 7.67583,4.73056 8.30658,5.21261 C8.58532,5.42563 8.95261,5.49547 9.29491,5.39175 C10.1245,5.14037 11.0377,5.00008 12,5.00008 C12.9614,5.00008 13.8737,5.1401 14.7027,5.39103 C15.0449,5.4946 15.4119,5.42479 15.6906,5.21193 C16.3211,4.73024 17.0522,4.37419 17.8098,4.14164 C17.9211,4.80847 17.9309,5.53652 17.682,6.17398 C17.532,6.55795 17.6072,7.00009 17.8898,7.31369 C18.6138,8.11696 19,9.04077 19,10.0001 C19,12.1142 17.0306,14.187 13.8662,14.8182 C13.0738,14.9763 12.7646,15.9726 13.3711,16.544 C13.7596,16.91 14,17.4261 14,18.0001 L14,21.0001 C14,21.5523 14.4477,22.0001 15,22.0001 C15.5523,22.0001 16,21.5523 16,21.0001 L16,18.0001 C16,17.4303 15.8805,16.888 15.6657,16.3972 C18.6831,15.3498 21,12.9925 21,10.0001 C21,8.65251 20.5156,7.41484 19.7128,6.37804 C19.9226,5.55843 19.904,4.73178 19.8242,4.09759 C19.7528,3.53005 19.6535,2.78566 19.2532,2.34211 C18.6586,1.68341 17.6732,2.07099 16.9732,2.31048 C16.3548,2.52075 15.5898,2.85589 14.8487,3.35549 C13.9512,3.12436 12.993,3.00008 12,3.00008 C11.006,3.00008 10.0468,3.12461 9.14859,3.35618 C8.4074,2.85633 7.64217,2.52103 7.02354,2.31066 C6.32363,2.07114 5.33755,1.68338 4.74302,2.34223 C4.33543,2.7939 4.24955,3.47917 4.17668,4.06064 L4.17186,4.09904 C4.09212,4.73386 4.07374,5.56141 4.28443,6.38166 C3.48323,7.41773 3,8.6541 3,10.0001 C3,12.9925 5.3169,15.3498 8.33434,16.3972 C8.12194,16.8823 8.00278,17.4177 8.00005,17.9803 L7.8323,18.0138 C7.11546,18.1126 6.65626,18.0246 6.3437,17.892 C5.58364,17.5696 5.19225,16.7586 4.71319,16.1387 C4.41554,15.7535 3.98203,15.2733 3.31625,15.0514 C2.79231,14.8768 2.22599,15.1599 2.05134,15.6839 C1.8767,16.2078 2.15986,16.7741 2.6838,16.9488 C3.24249,17.135 3.62811,18.0909 3.98181,18.5153 C4.35469,18.9628 4.85081,19.4312 5.5626,19.7332 C6.24412,20.0223 7.0447,20.1258 8,20.0088 L8,21.0001 C8,21.5523 8.44772,22.0001 9,22.0001 C9.55228,22.0001 10,21.5523 10,21.0001 L10,18.0001 C10,17.4261 10.2404,16.91 10.6289,16.544 C11.2355,15.9725 10.926,14.9763 10.1338,14.8182 C6.96942,14.187 5,12.1142 5,10.0001 C5,9.0417 5.38549,8.11879 6.10804,7.31608 C6.39058,7.0022 6.46541,6.55985 6.31507,6.17592 Z' id='路径' fill='#81846FFF'></path></g></g></g></svg>  
+              </a>
+            </li>
 
-  </footer>
+            <li role="listitem">
+              <a href="mailto:nat@natanceballos.com" role="link">
+                <?xml version='1.0' encoding='UTF-8'?><svg width='32px' height='32px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>mail_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Contact' transform='translate(-144.000000, 0.000000)' fill-rule='nonzero'><g id='mail_line' transform='translate(144.000000, 0.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M20,4 C21.0543909,4 21.9181678,4.81587733 21.9945144,5.85073759 L22,6 L22,18 C22,19.0543909 21.18415,19.9181678 20.1492661,19.9945144 L20,20 L4,20 C2.94563773,20 2.08183483,19.18415 2.00548573,18.1492661 L2,18 L2,6 C2,4.94563773 2.81587733,4.08183483 3.85073759,4.00548573 L4,4 L20,4 Z M20,7.41424 L13.0606,14.3536 C12.4748,14.9394 11.5251,14.9394 10.9393,14.3536 L4,7.41424 L4,18 L20,18 L20,7.41424 Z M18.5858,6 L5.41409,6 L12,12.5859 L18.5858,6 Z' id='形状' fill='#81846FFF'></path></g></g></g></svg>
+              </a>
+            </li>
+          </ul>
 
-
-
-
+          <div class="copyright">
+            <p>
+              &copy; Copyright 2023 Natan Ceballos</a>
+            </p>  
+          </div>     
+        </footer>
 
   <script defer src="./js/count-of-hovered-element.js"></script>
   <script defer src="./js/toggle-dark.js"></script>
