@@ -2,7 +2,7 @@
 
 .form-container {
 	margin-block: var(--size-step-3);
-  color: #81846F;
+  color: #000;
 }
 
 form {
@@ -32,17 +32,16 @@ form p[id] {
 }
 
 form input,textarea {
-	border: 2px solid #81846F;
+	border: 2px solid #000;
 	border-radius: 1rem;
 	padding: .85rem 1rem;
 	font-size: clamp(.88rem,.83rem + .24vw,1rem);
 	line-height: 1;
-	font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace
 }
 
 
 form :focus {
-	outline: #2C701F solid 1px;
+	outline: #000 solid 1px;
 	outline-offset: .25rem
 }
 
@@ -93,9 +92,9 @@ form {
     display: inline-block;
     padding: var(--size-step-0) var(--size-step-1);
     border-radius: clamp(1.37rem,1.21rem + 0.8vw,1.78rem);
-    /* border: 2px solid #81846F; */
+    /* border: 2px solid #000; */
     background: transparent;
-    color: #81846F;
+    color: #000;
     cursor: pointer;
     font: inherit;
     text-transform: uppercase;
