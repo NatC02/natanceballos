@@ -1,0 +1,342 @@
+:root {
+  /* DARK THEME */
+  /* Page Start Side Dark theme variables */
+
+  /* ordering of colors are as follows fron https://colorhunt.co/palette/2c36393f4e4fa27b5cdcd7c9*/
+  /* 1st column: background, 2nd: links  3rd: text 4th: active*/
+
+  /* background */
+  --color-start-light-background: '#FAF1E2';
+  /* text */
+  --color-start-light-text: '#81846F';
+  --color-start-light-paragraph: "#81846F";
+  /* links, both are the same, change later */
+  --color-start-light-link-text: "#B49D73";
+  --color-start-light-link-text-background: "#B49D73";
+  
+  --color-start-light-active-link: "#2C701F";
+  /* this is black for now, change it later */
+  --color-start-light-active-link-background: "#81846F";
+
+
+
+
+  /* https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097 */
+  /* Page End Side dark theme variables */
+  /* background */
+  --color-end-light-background: '#81846F';
+  /* text */
+  --color-end-light-text: '#FAF1E2';
+  --color-end-light-paragraph: "#FAF1E2";
+  /* links, both are the same, change later */
+  --color-end-light-link-text: "#B49D73";
+  --color-end-light-link-text-background: "#B49D73";
+}
+
+
+
+
+
+
+
+
+
+
+
+body[toggle-dark] {
+  background-color: #FAF1E2;
+}
+
+.page-sidebar[toggle-dark] {
+  background-color: #FAF1E2;
+}
+
+.page-sidebar[toggle-dark] > :last-child {
+  background-color: #81846F;
+}
+
+
+
+
+
+.link[toggle-dark],
+.link[toggle-dark] *,
+.link[toggle-dark]:after,
+.link[toggle-dark]:before,
+.link[toggle-dark]:after,
+.link[toggle-dark]:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.link[toggle-dark] {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    color: #B49D73;
+}
+
+.link-active[toggle-dark] { 
+    color: #2C701F;
+
+    pointer-events: none;
+    /* cursor: default; */
+}
+
+.link[toggle-dark]:before {
+  background: #81846F;
+}
+
+.link[toggle-dark]:hover:before {
+  transform: translate(calc(100% - var(--margin) * 2), -50%);
+}
+
+
+
+
+
+
+/* Intro Section */
+
+.box-intro[toggle-dark] {
+  background-color: #FAF1E2;
+}
+
+.intro-title[toggle-dark] {
+  color: #81846F;
+}
+
+.intro-sub-title[toggle-dark] {
+  color: #81846F;
+}
+
+.intro-par[toggle-dark] {
+  color: #81846F;
+}
+
+/* Services, Testimonial Section */
+
+.card-box[toggle-dark] {
+  background-color: #FAF1E2;
+}
+
+.card-title[toggle-dark] {
+  color: #81846F;
+}
+
+.card-info cite[toggle-dark] {
+  color: #81846F;
+}
+
+.card-info span[toggle-dark] {
+  color: #81846F;
+}
+
+.card-info blockquote[toggle-dark] {
+  color: #81846F;
+}
+
+.push-button[toggle-dark] {
+  background-color: #81846F;
+  color: #FAF1E2;
+  border: 1px solid #FAF1E2;
+  box-shadow: 0 0 0 0 #81846F;
+}
+
+.push-button[toggle-dark]:hover {
+  box-shadow: 2px 5px 0 0 #81846F;
+};
+
+.push-button[toggle-dark]:active {
+  box-shadow: 0 0 0 0 #2C701F;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+a button.link-active[toggle-dark] { 
+  color: #2C701F;
+  pointer-events: none;
+}
+
+button.link[toggle-dark] {
+  color: #B49D73
+} */
+
+article[toggle-dark] {
+  color: #81846F;
+  /* background-color: #81846F; */
+}
+
+article[toggle-dark] figcaption, blockquote, p {
+  color: #81846F;
+  /* background-color: #81846F; */
+}
+
+h1[toggle-dark], h2[toggle-dark], h3[toggle-dark], h4[toggle-dark], h5[toggle-dark], h6[toggle-dark] {
+  color: #81846F;
+}
+
+p[toggle-dark] {
+  color: #81846F;
+}
+
+.with-icon[toggle-dark] {
+  color: #81846F;
+}
+
+i[toggle-dark] {
+  color: #81846F;
+}
+
+
+/* cite[toggle-dark] {
+  color: #81846F;
+}
+
+blockquote[toggle-dark] {
+  color: #81846F;
+}
+
+figcaption[toggle-dark] * + * {
+  color: #81846F;
+} */
+
+.page-end-side[toggle-dark] {
+  color: #FAF1E2;
+}
+
+.about-title[toggle-dark] {
+  color: #FAF1E2;
+}
+
+.about-me-par[toggle-dark] {
+  color: #FAF1E2;
+}
+
+
+
+
+
+
+
+
+
+
+/* a button.end-link[toggle-dark] {
+  color: #FAF1E2;
+}
+
+button.end-link[toggle-dark]:before {
+  background-color: #B49D73;
+}
+ */
+
+
+
+.end-link[toggle-dark],
+.end-link[toggle-dark] *,
+.end-link[toggle-dark]:after,
+.end-link[toggle-dark]:before,
+.end-link[toggle-dark]:after,
+.end-link[toggle-dark]:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.end-link[toggle-dark] {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    color: #FAF1E2;
+}
+
+.end-link[toggle-dark]:before {
+  background: #B49D73;
+}
+
+.end-link[toggle-dark]:hover:before {
+  transform: translate(calc(100% - var(--margin) * 2), -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact form */
+
+
+/* 
+.form-container[toggle-dark] {
+	margin-block: var(--size-step-3);
+	color: #81846F;
+}
+
+form {
+	--flow-space: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem)
+}
+
+form label {
+	text-transform: uppercase;
+	padding: 0 0 .5rem clamp(.88rem,.83rem + .24vw,1rem);
+	font-weight: 700;
+}
+
+form label:after {
+	content: "\a";
+	white-space: pre
+}
+
+form input,form p[id],form textarea {
+	width: 100%;
+	max-width: 30rem
+}
+
+form p[id] {
+	font-size: clamp(.88rem,.83rem + .24vw,1rem);
+	padding: .5rem 0 0 1rem;
+	font-family: atkinson_hyperlegible,Arial,sans-serif
+}
+
+form[toggle-dark] input[toggle-dark], textarea[toggle-dark] {
+	border: 2px solid #81846F;
+}
+
+
+form[toggle-dark] :focus {
+	outline: #2C701F solid 1px;
+}
+
+.button[toggle-dark] {
+    color: #81846F;
+} */
