@@ -33,7 +33,6 @@
         </script>
 
         <link type="text/css" rel="stylesheet" href="./css/reset.css">
-        <link type="text/css" rel="stylesheet" href="./css/contact/form.css">
         <link type="text/css" rel="stylesheet" href="./css/portfolio/portfolio.css">
         <link type="text/css" rel="stylesheet" href="./css/portfolio/portfolio-light.css">
         <link type="text/css" rel="stylesheet" href="./css/avatar.css">
@@ -63,7 +62,6 @@
             <nav role="navigation">
                 <ul role='list' class="cluster-nav-start"> 
                   <li role="listitem">
-                    <!-- I have no choice but to put the element here, without refactoring ALOT of my code to make an entire dark-mode page and saving the state on subsequent visits of refreshes -->
                     <label class="floating-container"><input id="floating-checkbox" type="checkbox" checked="false"></label>
                   </li>
                   <li role="listitem" id="image-container">
@@ -109,48 +107,6 @@
               </div>        
             </article>
 
-          <!-- <div class="form-container">
-            <form  class="wrapper flow" name="contact" action="/contact-thank-you" method="POST" data-netlify="true" toggle-dark>
-              <input type="hidden" name="form-name" value="Enquiry" toggle-dark>
-              <div>
-                <label for="name" toggle-dark>Name
-                </label> 
-                <input type="text" id="name" name="name" required="" toggle-dark>
-              </div>
-              <div>
-                <label for="email" toggle-dark>Email
-                </label> 
-                <input type="email" id="email" name="email" required="" toggle-dark>
-              </div>
-              <div>
-                <label for="budget" toggle-dark>Budget
-                </label> 
-                <input type="text" id="budget" name="budget" required="" aria-described-by="budget_helper" toggle-dark>
-                <p id="budget_helper" toggle-dark>I just want to get a rough estimate so I can understand how I can best support you.
-                </p>
-              </div>
-              <div>
-                <label for="deadline" toggle-dark>Deadline
-                </label> 
-                <input type="text" id="deadline" name="deadline" required="" aria-described-by="deadline_helper" toggle-dark>
-                <p id="deadline_helper" toggle-dark>If there isn't a firm deadline, it's best to leave this blank. A general timeframe would still be appreciated though.
-                </p>
-              </div>
-              <div>
-                <label for="details" toggle-dark>Any other information?
-                </label> 
-                <textarea id="details" name="details" aria-described-by="details_helper" rows="10" toggle-dark>
-                </textarea>
-                  <p id="details_helper" toggle-dark>Think there's anything else I should know to get a better grip on this project?
-                </p>
-              </div>
-              <div>
-                <button class="button" toggle-dark>Send
-                </button>
-              </div>
-            </form>
-          </div> -->
-
           <!-- Copyright Symbol -->
           <footer>
             <span class="with-icon" toggle-dark>
@@ -188,8 +144,6 @@
           <!-- About Me Section -->
           <article class="about-box">
             <div class="about-me-img-container">
-              <!-- this is a little weird. But we're setting display to none on the element that has the custom attribute toggle-dark -->                
-              <!-- also refactor the class name img-c make it make more sense -->                                  
               <picture class="about-me-frame" imgLight>
                 <source class="img-c" srcset="./img/portfolio/about-me/light-about-hero.avif" type="image/avif">
                 <source class="img-c" srcset="./img/portfolio/about-me/light-about-hero.webp" type="image/webp">
@@ -206,9 +160,7 @@
             <h3 class="about-title highlight-end center" role="heading" aria-level="3" toggle-dark>New Jersey, United States</h3>
 
             <p class="about-me-par" toggle-dark>
-              As a lifelong learner, I am constantly on the lookout for new ways to level up the web. In fact, I am so passionate about it that you can keep up with my thoughts and updates on my community blog (coming soon). I am all in when it comes to the web, and have sharpened my skills in technologies such as Wordpress, React, Gatsby, Node, and AWS as a Frontend developer to deliver an exceptional web experience. 
-
-              <!-- The first time I knew I wanted to go into tech was when I broke my DS in two thinking I could put it back together.  -->
+              As a lifelong learner, I am constantly on the lookout for new ways to level up the web. In fact, I am so passionate about it that you can keep up with my thoughts and updates on my community blog (coming soon). I am all in when it comes to the web, and have sharpened my skills in technologies such as Wordpress, React, Gatsby, Node, and AWS as a Frontend developer to deliver an exceptional web experience.
             </p>
               
             <h3 class="about-title highlight-end center" role="heading" aria-level="3" toggle-dark>
