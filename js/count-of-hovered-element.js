@@ -1,10 +1,13 @@
-"use strict";
-
-let count = 0;
-let element = document.getElementById("logo-avatar-container");
-let counter = document.getElementById("counter");
-
 element.addEventListener("mouseover", function() {
   count++;
-  counter.innerHTML = count;
+  counter.textContent = count;
+  localStorage.setItem("count", count);
+  let i = 0;
+  elementsToShow[i].style.visibility = "visible";
+  element.addEventListener("mouseover", function(){
+    i++;
+    if (i < elementsToShow.length) {
+      elementsToShow[i].style.visibility = "visible";
+    }
+  });
 });

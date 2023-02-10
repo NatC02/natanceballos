@@ -10,12 +10,6 @@ links.forEach(function(link) {
   // or if its the root url map to /index.html instead
   (currentUrl === "/" && link.getAttribute("href") === "/index.html")
   ) {
-    // link.className = "";
-    // link.classList.add("link-active");
-    // link.classList.remove("link:hover");
-    // console.log("active link " + link)
-    // add a click event listener to the link
-
     // link.classList.add("link-active","link-active:active");
     link.classList.toggle("link-active");
 
@@ -25,4 +19,6 @@ links.forEach(function(link) {
   } else {
     link.classList.remove("link-active");
   }
+
+  console.log("link " + link.classList);
 });
