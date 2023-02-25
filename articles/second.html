@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Natan Ceballos - Frontend Developer</title>
+        <link rel="canonical" href="https://natanceballos.com/portfolio">
+        <meta property="og:site_name" content="Natan Ceballos Portfolio">
+        <meta property="og:title" content="Natan Ceballos Portfolio">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://natanceballos.com/">
+        <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+
+        <!-- Partytown (web worker, main thread offload) -->
+        <script type="text/javascript" src="/~partytown/partytown.js"></script>
+        
+        <script type="text/javascript" src="../js/moment.min.js"></script>
+        
+        <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-0QKRQP1LDZ"></script>
+        <script async>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-0QKRQP1LDZ');
+        </script>
+
+        <link type="text/css" rel="stylesheet" href="../css/reset.css">
+        <link type="text/css" rel="stylesheet" href="../css/articles/articles.css">
+        <link type="text/css" rel="stylesheet" href="../css/articles/newsletter-footer-center-page.css">
+    
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i" rel="stylesheet" />
+      </head>
+    <body>
+
+    <header role="banner">
+        <nav role="navigation">
+            <ul role='list' class="cluster-nav-start"> 
+                <li role="listitem">
+                <a href="/index.html" role="link" tabindex="-1">
+                    <button class="link" aria-label="Navigate to Home">Home</button>  
+                </a>
+                </li>
+                <li role="listitem">
+                <a class="link" href="/entries.html" aria-current="page"  role="link" tabindex="-1">
+                    Entries
+                </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="centerl">
+
+        <article>
+            <header class="header-img">
+                <div class="upper-header">
+                    <div class="mini-title">Entry</div>
+                    <div class="date-since">
+                        <p><span class="date-value" id="sinceData"></span></p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                            <defs>
+                                <style>
+                                    .d {
+                                        width: 20px;
+                                        fill: #fff;
+                                        opacity: .5;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="d" d="M15,0C6.75,0,0,6.75,0,15s6.75,15,15,15,15-6.75,15-15S23.25,0,15,0Zm7.35,16.65h-7.35c-.83,0-1.5-.67-1.5-1.5V7.8c0-.9,.6-1.5,1.5-1.5s1.5,.6,1.5,1.5v5.85h5.85c.9,0,1.5,.6,1.5,1.5s-.6,1.5-1.5,1.5Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="lower-header">
+                    <div class="tags-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <defs>
+                                <style>
+                                    .d {
+                                        width: 20px;
+                                        fill: #fff;
+                                        opacity: .75;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="d" d="M19.22,9.66L10.77,1.21c-.74-.74-1.86-1.21-2.97-1.21H1.67C.75,0,0,.75,0,1.67V7.8c0,1.11,.46,2.23,1.3,2.97l8.45,8.46c1,1,2.62,1,3.62,0l5.94-5.95c.93-.93,.93-2.6-.09-3.62ZM6.96,6.35c-.59,.59-1.56,.59-2.15,0-.59-.59-.59-1.56,0-2.15,.59-.59,1.56-.59,2.15,0,.59,.59,.59,1.56,0,2.15Z" />
+                        </svg>
+                        <span>Societal</span>
+                        <span>Tech</span>
+                    </div>
+                    <h1 class="title">The Hype and Reality of AI</h1>
+                </div>
+            </header>
+            <section class="summary">
+                <div class="summary-item">
+                    <h5 class="item-title">Read Time</h5>
+                    <p class="item-text"><span class="item-data">20</span> Mins</p>
+                </div>
+                <div class="summary-item">
+                    <h5 class="item-title">Created / Updated:</h5>
+                    <p class="item-text"><span class="item-data" id="dateData"></span></p>
+                </div>
+            </section>
+            <section class="main-article">
+                <h4>AI Hype: A Free-Flowing Conversation</h4>
+                <p>
+                  With all the hype surrounding Artificial Intelligence, I feel compelled to add my two cents to the discussion. Just the other day, I had a lengthy conversation with a friend whom I hadn't spoken to in months. Our discussion revolved around the implications of AI for the current state of the world, and boy, did we cover some ground. So, grab yourself a drink and settle in for a thought-provoking and spontaneous conversation (or monologue, depending on how you view it).
+                </p>
+
+                <p>
+                  This entry is primarily a stream of consciousness, where I will share some of the ideas that have been occupying my thoughts in recent weeks. As with any conversation I have, I tend to explore the patterns of progress from previous generations and brainstorm ideas.
+                </p>
+
+                <h4>Fields and Feudal Lords</h4>
+                <!-- <p> 
+                   For instance, we talked about the good old days of feudalism and how peasants were indebted to work for their lord. They'd spend their days toiling away on the land, using manual hoes to graze it. But then, someone came up with the animal-drawn cultivator. And let me tell you, the peasants hit the griddy (as the kids these days say).
+                </p>            
+                <p>  
+                  Can you imagine the reaction to having a contraption like that? It saved a few hours of labor. And let's not forget about the benefits of having wheels to guide the animal. Suddenly, a humble medieval peasant who only worked half a year could travel across distant <a href="https://www.youtube.com/watch?v=EWjQ230ZJao">using a DIY handcart</a> lands and stop by taverns for a rest. It was the chatGPT of their time. And if you couldn't afford a horse, well, you made do with what you had.
+                </p> -->
+
+                One of the first examples we talked about was the peasants who constituted the bulk of human history. They lived under a feudal system of government where they worked the land they were indebted to their lords for. As such, one of the most revolutionary inventions during that time was the animal-drawn cultivator which replaced the manual hoe. Can you imagine the reaction of a peasant who suddenly had access to such a contraption? This innovation saved them several hours of labor. It's easy to picture a peasant hitting the "griddy," as the kids these days say.
+
+                Suddenly, I, as a humble medieval peasant who only worked for half a year, could travel to distant places and stop by taverns for rest. All because I had a makeshift cart to relieve myself of the heavy load I could be carrying. Since I didn't have enough money for a horse, I had to make do with travelling this way. Perhaps this was the equivalent of chatGPT back then?
+
+                <h4>Web's World Wide Wonderland</h4>                
+                <!-- <p>  
+                  It was supposed to be the technological breakthrough that would revolutionize communication as we knew it. And boy, did it deliver. Over the past 20+ years, the internet has become an integral part of our lives, with accessibility and connectivity reaching unprecedented levels. <a href="https://www.statista.com/statistics/273018/number-of-internet-users-worldwide/">With 62% of the world being online as of 2022.</a> But as with any new development, human nature had to rear its head, and the dot com bubble of the late 90s was a prime example of our tendency to get carried away.
+                </p>
+                <p>
+                  However, even in the early days of the internet, we saw both progress and stagnation. That's right, folks, it's what I like to call "more of the same." Not the most popular phrase, but hear me out.
+                </p>
+                <p>
+                  While the internet has the power to connect people from all corners of the globe (thank you, underwater cables), it also has a darker side. As much as it has the potential to bring together different cultures and backgrounds, it can also perpetuate discrimination and inequality. And let's not forget about anonymity and privacy - they can be double-edged swords, leading to a lack of accountability and responsibility.
+
+                  But that's not all. The internet is a vast sea of content, yet it can still leave us feeling like we're drowning in sameness and conformity. And while it's supposed to be a platform for self-expression, it can also lead to self-censorship and social conformity. It's a strange dichotomy, really.
+                  
+                  And with the rise of AI, these complexities are only going to be highlighted further. It's funny, isn't it? As we push further into technological advancements, we're realizing more and more that the real issues are the ones that come from us - the humans.
+                  
+                  So, it's no surprise that psychology will become one of the most crucial aspects of our society. Because as much as we like to think we're evolving with technology, the truth is, we're still grappling with the same old human problems.
+                </p> -->
+
+                The internet was meant to be a grandiose technology that would open up possibilities of communication as we knew it. And it did, in part. The internet has become an integral part of our lives, with accessibility and connectivity reaching unprecedented levels. As of 2022, 62% of the world is online. However, as with any new development, human nature had to rear its head, and the dot com bubble of the late 90s was a prime example of our tendency to get carried away.
+
+                In the early formative years of the internet, society progressed but also experienced "more of the same," as I like to call it. It's not a popular phrase, but I think it should be. The internet made it possible for us to communicate across the entire world, thanks to underwater cables. Yet human patterns and tendencies crept their way in.
+
+                For as much as the internet has the potential to bring together different cultures and backgrounds, it can also perpetuate discrimination and inequality. And let's not forget about anonymity and privacy. They can be double-edged swords, leading to a lack of accountability and responsibility.
+
+                But that's not all. The internet is a vast sea of content, yet it can still leave us feeling like we're drowning in sameness and conformity. And while it's supposed to be a platform for self-expression, it can also lead to self-censorship and social conformity.
+
+                With the rise of AI, these complexities will only be highlighted further. It's no surprise that psychology will likely become one of the most insightful fields for AI. As much as we like to think we're evolving with technology, the truth is, we're still grappling with the same old human problems.
+                
+                <p>
+                  he internet is composed of numerous bubbles, each catering to specific demographics or connecting individuals with distinct interests. It resembles an everlasting high school cafeteria, but instead of jocks and cheerleaders, we have subreddits and Facebook groups.
+
+                  Back in the early days, during the onset of the internet, early adopters treated it as a hobby. While the rest of the world was still grappling with the concept of email, these pioneers engaged in sharing cat photos, creating memes, and cracking jokes (some of which were tasteless, but that's the internet for you). They also dealt with the outrage prompted by news reports warning of potential abuse- similar to what is happening with chatGPT right now.
+                  
+                  However, amidst this chaos, something remarkable emerged. The internet paved the way for web-based services and novel business opportunities, transforming into the behemoth we witness today.
+                </p>
+
+                <h4>From Farming to Factories</h4>                
+                <p>
+                  During the Industrial Revolution, several inventions revolutionized manufacturing, such as the spinning jenny created by James Hargreaves in 1764 and the James Watt engine, which was widely utilized during this period. These innovations allowed us to produce cloth at an unprecedented speed, leading to the United States' prosperity through cotton production. However, the abundance of cotton led to a price collapse, which prompted the "Go to Texas" movement two decades later. Despite these benefits, society had to regulate and standardize the use of these physical tools to address their associated effects.
+                </p>
+                <p>
+                  <!-- Just as with the steam engine, the future now will bring with it wider wealth distribution and increased global trade. But don't be fooled by the rosy outlook — just like the internet, we'll witness the formation of "huddles" among like-minded folks with their own aligned interests (something that's been going on forever, but now with the added bonus of technology). -->
+                </p>
+
+
+                <h4>Nature's Most Complicated Creature</h4>             
+                <p>
+                  Take human nature, for example. We crave connection. That's where the internet comes in — it's made it even easier to find and connect with those who share our views and values. But here's the kicker: while we were promised more openness and possibilities, what we've actually gotten is "more of the same."
+                </p>
+                <p>
+                  It's like ChatGPT; we humans tend to gravitate towards things that are predictable. Why bother learning a new language (even though the internet has made it more accessible than ever) or exploring new customs and etiquettes that you thought were unique to your culture? The real challenge is going to be breaking the mold of human nature and the advancements that pose a threat to traditional human capital.
+                </p>
+
+                <h4>Lingual Lingo: The Language of Interpretation</h4>                
+                <p>
+                  Understanding the precise tone and intention behind a speaker's words can sometimes avert tragedies. Idioms are a classic example of this; they act like secret handshakes, enabling one group to recognize another as their own. If the response is favorable, then we have struck a chord! Naturally, we must assume that the other party is being genuine. This phenomenon is not confined to idioms; it exists in all languages. Mandarin, for instance, employs phrases that might not seem significant on the surface, but they carry a wealth of national history and ideas. We could describe this as colloquialism or jargon instead of idioms, but in essence, it amounts to the same thing.
+                </p>
+
+                <h4>16th Century's Grisliest Grapple</h4>               
+                The 16th century saw one of the most gruesome and significant battles in history. Many historians love to cite the meeting between Hernan Cortes, the Spanish conquistador, and Montezuma II, the Aztec ruler. The two were strangers to each other, with no prior knowledge or understanding of their respective cultures. During their first meeting, Cortes wanted to embrace Montezuma passionately, but he was restrained by Montezuma's group, and they instead bowed to each other. This meeting had significant context, as the Aztecs had never encountered Europeans before, and vice versa. The horses that the Aztecs saw bewildered them, and they had never seen those animals before. Similarly, the strange light and heavy weapons used by the Spaniards were a mystery to them. Cortes, too, was overwhelmed by the sheer wealth and civilization he saw before him. However, neither side had any ill intentions towards the other. There was no "Stop right there, criminal scum!" followed by a "Must have been the wind."
+
+                Cortes had two translators with him during the meeting. The first was a prisoner woman named Malinche, who knew the Aztec language, Nahuatl, and Mayan. The other translator was a priest named Geronimo del Aguilar, with whom Cortes conversed in Spanish. The translation was, therefore, a chain of ideas from one person to another, with the longer the chain, the more information was lost. It was almost like a game of Chinese Whispers, with multiple people playing over time.
+
+                If you have a vague idea of what happened next from your history class, you might wonder how this meeting could lead to the bloodiest battle of the sixteenth century. Well, my sweet, sweet summer child, let's delve into that.
+                <!-- <img src="https://i.imgflip.com/7bv7s1.jpg"/> -->
+
+
+                <h4>Unfamiliarity's Subtle Complexities</h4>
+                
+                There was a hint of subtle undertones in the air. After an extravagant dinner in the palace, Montezuma decided to give a speech. However, unintentional language tomfoolery (that word oozes contemporary essence to me) ensued.
+
+                Large monologue chunks of Montezuma, larger than life in stature, were concessions. The Spaniards took a liking to what they heard effectively: 
+                
+                that Cortes and his crew were divine beings fulfilling the prophecy of a banished god's return from the east. The cherry on top? Montezuma himself was expected to surrender to Cortes. It's hard to fathom what must have gone through Cortes' mind as he left that meeting. Perhaps something along the lines of "we're about to go all-in at Ponchinki." That, my friends, was a true Hotel Trivago moment.
+                
+                To put it bluntly, we all know that Montezuma had something else entirely in mind. Like idioms, there was a way to express reverence without explicitly saying so. It's like the Russian folklore story of the holy fool. The lord buys a special cloak from a luxurious merchant the night before attending the township meeting. Nobody points out that he's actually naked, with the exception of a naive child, oblivious to societal taboos.
+                
+                Nahuatl, the language of the Aztecs, relied on this type of speech to communicate. Just like the Russian folklore, the active avoidance of mentioning the compliment explicitly was the compliment itself. Ironically, the boy acknowledged the robe, and maybe he acknowledged something else. In any case, we know that there is an active societal difference in communication and perception of class by the different ways someone decides to communicate.
+
+              <h4>Verbose Past</h4>
+              Let's discuss the word "shit." In the Victorian era, saying it was considered downright obscene. However, now we're permitted to use it once per pg-13 movie. The association of these words to the common man made them more "filthy" to use. For instance, "culo" in Spanish is perceived as taboo, while in another part of the world, the word may be less harsh, depending on the education level of the person and their awareness of world differences. The distinguished and educated used euphemisms instead of using these words. For instance, "shit" became "fecal matter," and "culo" became "nalga." Nevertheless, there's a subtle nuance to language, similar to the waters Cortes's translators navigated.
+
+              Language changes over time. For example, everyday terms may gain new meanings through a "euphemism cycle." Take "Chinese Whisper," for example. The name may be perceived as derogatory because it implies that the Chinese language is incomprehensible or challenging to understand. However, the game itself is not inherently derogatory, and school children play it without intending to be offensive.
+
+              I'd like to preface that there's nothing wrong with euphemisms. They're typically used out of concern, recognizing the feelings of another person, or to avoid discussing a socially or culturally taboo topic. However, within the euphemism cycle, a word that passes through this process can become a slur. I won't mention them here because I've exceeded my daily "shit" usage word limit in society, and possibly my derogatory word usage as well.
+
+              By and large, this type of anti-categorical imperative behavior is probably seen across all languages worldwide. It's a distinctly human pattern, no matter where we go. Now, back to our boy, Montezuma.
+
+              Cheeky Montezuma (not that he intended to come across that way) was displaying a false sense of humility in his communication. To him and his peers, that was likely the epitome of classiness and projecting their status. This was all in good nature, though. Perhaps Cortes felt the same when he tried to affectionately embrace Montezuma at the beginning? Who knows? In practical terms, the word "noble" is nearly identical to the word "child" in Nahuatl. Speaking in code, Montezuma referred to himself as weak and small, but those around him understood that he was implying how powerful and high-falutin he cherished himself to be. Again, all in good nature. 
+              
+              It's probably similar to my last CRPG playthrough of Pathfinder: Kingmaker, where the Goblins and my offbeat party decided to have a drink, getting hungover than a horse in the summertime heat. But they didn't attack me immediately. I had the option, but I decided to gained more experience points by prolonging the interaction with them. Maybe the dice rolls were in my favor too?
+
+              The point is that overlooking the nuance of language eliminates the soul we find in human compassion. It may even obscure their true meaning, just as Malinche and Geronimo del Aguilar may have felt.
+
+
+              <h4>AI and the Moral Time Warp</h4>
+              <!-- <p>
+                How will we handle values changing over time? There still exists in large parts of the world exagerated claims that "people from this part of the world or with this religion are like FILL IN STEREOTYPE HERE" when that couldn't be further from the truth. Why? <a href="https://www.gapminder.org/dollar-street">Because country stereotypes simply fall apart when you look at the huge differences within countries and the equally huge similarities between countries on the same income level, independent of culture or religion.</a> Language changes over time just like our values. Sweden is known today for being quite liberal and open about sex and contraceiption. But in the 1930s and even 60s that wasn't the case. Sweden today supports woman's rights and it has a strong connection with their culture. During the 1960s abotion was, except in rare cases illegal. Cultural values around the world are shared in large instances. Take for example the typical conservative wife. In many Asian countries like South Korea and Japan, many wives are expected to take care of the husband's parents, aswell as taking fulll responsibility for the care of any children. Many men are alright with this, because it's part of their culture. Maybe if I was born into the same type of culture I'd be okay with it too. The good old argument of nature vs nurture. Although these types of values are sometimes attached to be "Asian values" by some Asian men. Although woman might see it differently, because they find these sorts of culture ideas unbereable and might make them less interested in getting married. So values found all across the world might not be unique, because they're shared. Instead they are patriarchal values like those found in sweden during the 60s and beyound the 30s. And some of these values will fade away over time, like in modern Sweden today. This is another type of human-centered complexity AI will have to navigate, much like the internet did. I think the true goal is trying to get everyone on the same page. I have no clue what that means. Because its probably way too genereal to pinpoint in thought.
+
+
+
+
+
+
+                How do we deal with values that change with time? We still have to contend with the hyperbolic claims that "people from this part of the world or with this religion are [stereotype here]" in many parts of the world, <a href="https://www.gapminder.org/dollar-street">despite the fact that such claims are utterly false.</a>
+              </p>
+
+              <p>
+                There are huge discrepancies within countries, and equally huge resemblances between countries with similar income levels, regardless of their distinct cultures or religious beliefs. It's fascinating to observe how <a href="https://read.dukeupress.edu/demography/article/34/4/443/170733/Explaining-fertility-transitions">gender roles can shift rapidly across all societies as wealth increasesz and living standards become more modern. However, some cultures that place a higher value on extended families may experience a slightly slower pace of transformation.
+              </p> -->
+               
+              How do we address values that evolve over time? Despite the fact that many parts of the world still make claims that stereotype people based on their religion or geographical location, we must acknowledge that such claims are baseless. There are significant disparities within countries and striking similarities between countries with comparable income levels, regardless of their diverse cultures or religious beliefs. It is intriguing to see how gender roles can transform quickly across all societies as wealth increases and living standards become more modern. However, some cultures that place a higher value on extended families may experience a slightly slower pace of transformation.
+
+              Similar to how language evolves, so do our values. Today, Sweden is recognized for its liberal attitude towards sex and contraception, but back in the 1930s and even the 60s, things were vastly different. Sweden has emerged as a leader in championing women's rights, and it has a deep-rooted connection with this aspect of their culture. In the 1960s, abortion was illegal in most cases, but that is no longer the case.
+
+              Cultural values are frequently shared worldwide. For example, the "typical conservative wife" who is responsible for taking care of both husband's parents and the children is prevalent in several Asian countries, such as South Korea and Japan. Many men are content with this arrangement as it is part of their culture. Perhaps I would be okay with it too if I grew up in such a culture. The classic nature vs. nurture debate.
+
+              However, even though some men label these types of values as "Asian values," women may have a different perspective. They may find these cultural norms unbearable and be less inclined to get married. So, these values that are widespread across the globe may not be as unique as we think.
+
+              The thing is, many of these values are patriarchal values that were widespread in Sweden back in the 60s and even before that. But as we've seen, things change over time, just like values. Some of these values will fade away, as they have in modern-day Sweden. This is just another aspect of the human-centered complexity that AI will have to contend with, much like the internet did before it.
+
+              Will AI worsen this human-centered issue or strive to unify everyone on the same wavelength? What does that even mean? How do we address current concerns? For instance, many people can perceive the difference between dialogue in Hollywood movies from the 80s and today.
+
+              Will models adapt to cultural and societal changes? Will we be able to discern and pinpoint these changes in the media we consume 10 to 20 years from now? Or will it continually remain contemporary? It's a strange notion to always keep up with our communication demands. Once again, what does that even mean?
+
+              This is another form of human-centered complexity that AI must navigate, similar to the internet. Will it resemble the modern internet, where we have bubbles separated by language barriers?
+
+              <h4>Scoops with Silicon Snoops</h4>
+              Let's say I'm engaging in novice investigative journalism and attempting to verify the historical accuracy of an event. Now, imagine I ask leading questions. The model I'm using is trained on publicly available resources and broad discussions. It is not speculative, but based on years of documentation spread throughout. As a result, the AI may not be able to provide a truly neutral response. It is essential to consider other types of information that should tie into the answer being output.
+
+              However, how much in-depth knowledge is required to produce a transparent answer? Can omitting certain details be classified as misinformation? What if the information has not been subjected to official and verified scrutiny because it is not permitted? What level of accountability exists?
+              
+              The process of investigating and verifying information is complex, and AI is just one tool in a vast toolbox. I think to be effective, we must also rely on other sources of information and our own critical thinking abilities. Ultimately, it is up to us to be responsible and transparent in our reporting, no matter what tools we use.
+
+              <h4>Joe-normous Quest for knowledge</h4>
+              It's a peculiar situation we find ourselves in, as we heavily rely on democratized sources of information, much like during the internet boom. To authenticate information, we must resort to the time-tested methods that historians have used for centuries - primary and secondary sources, cultural context, and the whole gamut. Speaking of which, in the future, we may have validated sources of information that can be used to train models to prevent misuse.
+
+              Perhaps we can train AI on a wider and more diverse set of resources - both verified and unverified. We can even employ the internet to explore different languages and cultures and translate them into English using AI. Furthermore, why not involve the community? Have users expose our models to cultural ideas and nuances from around the world. We can even design models that flag potential biases or inaccuracies. By citing sources or linking to popular ideas it found, AI can enhance transparency and facilitate critical evaluation of the information.
+
+              Technology is an iterative process. It began with text on the internet using HTML (1991), followed by pictures (1994) with captions and audio, and ultimately, the game-changing arrival of YouTube with videos in the late 2000s. It's all about sharing content with the world, right? But what's next? What's the next phase in the communication game? The answer is simple: automating the creation of text, images, videos, and audio. We've already mastered long-distance communication. Now, we move on to something more fundamental - making thinking easier. Imagine a tool that promotes collaboration between individuals and also serves as an expert in their respective fields. It can even target the thinking process before the work is put to paper.
+                            
+              <h4>(Sorry Montezuma, I just couldn't resist) Ending with a bow</h4>
+              It's a noticeable step up, taking us to a different realm that is tied to what existed before. For the past three years, we've seen the openness and early adoption come into play, much like the internet in its infancy. The first year is the trial phase, where most people say, "Ah, I want to see what I can do with this." If I'm an average person, I try it out for shits and giggles and leave it at that. I have no ideas and just try it out. "Oh, I tried it out. That's pretty cool." I go about my day and drop it off. Then, the entrepreneur types come in and say, "How can we make a service out of this?" "How can we tie this into the current systems that exist today? Maybe we can use this AI text-to-voice to narrate videos." To avoid bias in the tone of voice that is being used for the speaker about certain topics.
+
+              The point is, I have no idea where this technology is going, but I'm excited to see where we will be in two to three years' time from now.
+            </section>
+        </article>
+
+        <div class="newsletter-box">
+            <h2>Newsletter</h2>
+            <iframe src="https://natanceballos.substack.com/embed" width="300" height="520" style="border:1px solid #81846F; background: black; border-radius: 20px; color: #81846F; margin-block-end: 100px;" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+      <!-- Footer Copyright -->
+      <footer>
+        <ul role='list' class="footer-links-nav"> 
+          <li role="listitem">
+            <a class="footer-icon" href="https://www.linkedin.com/in/natanceballos" role="link">
+              <?xml version='1.0' encoding='UTF-8'?><svg width='32px' height='32px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>linkedin_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Brand' transform='translate(-336.000000, -0.000000)' fill-rule='nonzero'><g id='linkedin_line' transform='translate(336.000000, 0.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M18,3 C19.6569,3 21,4.34315 21,6 L21,18 C21,19.6569 19.6569,21 18,21 L6,21 C4.34315,21 3,19.6569 3,18 L3,6 C3,4.34315 4.34315,3 6,3 L18,3 Z M18,5 L6,5 C5.44772,5 5,5.44772 5,6 L5,18 C5,18.5523 5.44772,19 6,19 L18,19 C18.5523,19 19,18.5523 19,18 L19,6 C19,5.44772 18.5523,5 18,5 Z M8,10 C8.51283143,10 8.93550653,10.386027 8.9932722,10.8833761 L9,11 L9,16 C9,16.5523 8.55228,17 8,17 C7.48716857,17 7.06449347,16.613973 7.0067278,16.1166239 L7,16 L7,11 C7,10.4477 7.44772,10 8,10 Z M11,9 C11.4913,9 11.8998,9.35427 11.9841,9.82128 C12.1863,9.70435 12.395,9.59892 12.6067,9.50837 C13.2739,9.22295 14.2732,9.06594 15.1749,9.34949 C15.6476,9.4981 16.1232,9.77907 16.4758,10.2556 C16.7904667,10.6810222 16.9599086,11.1984148 16.9936776,11.7792631 L17,12 L17,16 C17,16.5522 16.5523,17 16,17 C15.48715,17 15.0644908,16.6138867 15.0067275,16.1166055 L15,16 L15,12 C15,11.6707 14.9201,11.5157 14.868,11.4451 C14.8143,11.3726 14.7274,11.3053 14.5751,11.2574 C14.2268,11.1479 13.7261,11.2048 13.3933,11.3472 C12.892275,11.5614875 12.4347375,11.8971266 12.1239225,12.2083422 L12,12.3398 L12,16 C12,16.5523 11.5523,17 11,17 C10.48715,17 10.0644908,16.613973 10.0067275,16.1166239 L10,16 L10,10 C10,9.44772 10.4477,9 11,9 Z M8,7 C8.55228,7 9,7.44772 9,8 C9,8.55228 8.55228,9 8,9 C7.44772,9 7,8.55228 7,8 C7,7.44772 7.44772,7 8,7 Z' id='形状' fill='#81846FFF'></path></g></g></g></svg>
+            </a>
+          </li>
+
+          <li role="listitem">
+            <a class="footer-icon" href="https://github.com/NatC02" role="link">
+              <?xml version='1.0' encoding='UTF-8'?><svg width='32px' height='32px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>github_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Logo' transform='translate(-144.000000, -96.000000)' fill-rule='nonzero'><g id='github_line' transform='translate(144.000000, 96.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M6.31507,6.17592 C6.06528,5.53804 6.07509,4.80911 6.18645,4.14164 C6.94443,4.3743 7.67583,4.73056 8.30658,5.21261 C8.58532,5.42563 8.95261,5.49547 9.29491,5.39175 C10.1245,5.14037 11.0377,5.00008 12,5.00008 C12.9614,5.00008 13.8737,5.1401 14.7027,5.39103 C15.0449,5.4946 15.4119,5.42479 15.6906,5.21193 C16.3211,4.73024 17.0522,4.37419 17.8098,4.14164 C17.9211,4.80847 17.9309,5.53652 17.682,6.17398 C17.532,6.55795 17.6072,7.00009 17.8898,7.31369 C18.6138,8.11696 19,9.04077 19,10.0001 C19,12.1142 17.0306,14.187 13.8662,14.8182 C13.0738,14.9763 12.7646,15.9726 13.3711,16.544 C13.7596,16.91 14,17.4261 14,18.0001 L14,21.0001 C14,21.5523 14.4477,22.0001 15,22.0001 C15.5523,22.0001 16,21.5523 16,21.0001 L16,18.0001 C16,17.4303 15.8805,16.888 15.6657,16.3972 C18.6831,15.3498 21,12.9925 21,10.0001 C21,8.65251 20.5156,7.41484 19.7128,6.37804 C19.9226,5.55843 19.904,4.73178 19.8242,4.09759 C19.7528,3.53005 19.6535,2.78566 19.2532,2.34211 C18.6586,1.68341 17.6732,2.07099 16.9732,2.31048 C16.3548,2.52075 15.5898,2.85589 14.8487,3.35549 C13.9512,3.12436 12.993,3.00008 12,3.00008 C11.006,3.00008 10.0468,3.12461 9.14859,3.35618 C8.4074,2.85633 7.64217,2.52103 7.02354,2.31066 C6.32363,2.07114 5.33755,1.68338 4.74302,2.34223 C4.33543,2.7939 4.24955,3.47917 4.17668,4.06064 L4.17186,4.09904 C4.09212,4.73386 4.07374,5.56141 4.28443,6.38166 C3.48323,7.41773 3,8.6541 3,10.0001 C3,12.9925 5.3169,15.3498 8.33434,16.3972 C8.12194,16.8823 8.00278,17.4177 8.00005,17.9803 L7.8323,18.0138 C7.11546,18.1126 6.65626,18.0246 6.3437,17.892 C5.58364,17.5696 5.19225,16.7586 4.71319,16.1387 C4.41554,15.7535 3.98203,15.2733 3.31625,15.0514 C2.79231,14.8768 2.22599,15.1599 2.05134,15.6839 C1.8767,16.2078 2.15986,16.7741 2.6838,16.9488 C3.24249,17.135 3.62811,18.0909 3.98181,18.5153 C4.35469,18.9628 4.85081,19.4312 5.5626,19.7332 C6.24412,20.0223 7.0447,20.1258 8,20.0088 L8,21.0001 C8,21.5523 8.44772,22.0001 9,22.0001 C9.55228,22.0001 10,21.5523 10,21.0001 L10,18.0001 C10,17.4261 10.2404,16.91 10.6289,16.544 C11.2355,15.9725 10.926,14.9763 10.1338,14.8182 C6.96942,14.187 5,12.1142 5,10.0001 C5,9.0417 5.38549,8.11879 6.10804,7.31608 C6.39058,7.0022 6.46541,6.55985 6.31507,6.17592 Z' id='路径' fill='#81846FFF'></path></g></g></g></svg>  
+            </a>
+          </li>
+
+          <li role="listitem">
+            <a class="footer-icon" href="mailto:nat@natanceballos.com" role="link">
+              <?xml version='1.0' encoding='UTF-8'?><svg width='32px' height='32px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title>mail_line</title><g id='页面-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='Contact' transform='translate(-144.000000, 0.000000)' fill-rule='nonzero'><g id='mail_line' transform='translate(144.000000, 0.000000)'><path d='M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z' id='MingCute' fill-rule='nonzero'></path><path d='M20,4 C21.0543909,4 21.9181678,4.81587733 21.9945144,5.85073759 L22,6 L22,18 C22,19.0543909 21.18415,19.9181678 20.1492661,19.9945144 L20,20 L4,20 C2.94563773,20 2.08183483,19.18415 2.00548573,18.1492661 L2,18 L2,6 C2,4.94563773 2.81587733,4.08183483 3.85073759,4.00548573 L4,4 L20,4 Z M20,7.41424 L13.0606,14.3536 C12.4748,14.9394 11.5251,14.9394 10.9393,14.3536 L4,7.41424 L4,18 L20,18 L20,7.41424 Z M18.5858,6 L5.41409,6 L12,12.5859 L18.5858,6 Z' id='形状' fill='#81846FFF'></path></g></g></g></svg>
+            </a>
+          </li>
+        </ul>
+
+        <div class="copyright">
+          <p>
+            &copy; Copyright 2023 Natan Ceballos</a>
+          </p>  
+        </div>     
+    </div>
+    <script defer>
+      // Handle Publish Date
+      const dateData = document.getElementById("dateData");
+      const sinceData = document.getElementById("sinceData");
+      let publishDate = "2023-03-01";
+
+      dateData.textContent = moment(publishDate).format("LL");
+      sinceData.textContent = moment(publishDate).fromNow();
+    </script>
+  </body>
+</html>
